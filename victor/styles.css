@@ -11,6 +11,19 @@ body {
     background-size: cover;
 }
 
+#navigation {
+    margin: 20px 0 20px 0;
+}
+
+#navigation-li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    text-decoration: none;
+    margin: 0 100px 0 100px;
+    list-style-type: none;
+}
+
 #main-title {
     text-align: center;
     font-size: 50px;
@@ -26,6 +39,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
+    margin-top: 20px;
 }
 
 #main-subtitle {
@@ -75,7 +89,7 @@ body {
 }
 
 #magic-broom img {
-    width: 300px;
+    width: 380px;
 }
 
 #magic-bloom-flying {
@@ -93,6 +107,12 @@ body {
     }
 }
 
+aside a {
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+}
+
 #fourth-article {
     display: flex;
     flex-flow: row-reverse nowrap;
@@ -101,7 +121,7 @@ body {
 }
 
 #fourth-article img {
-    width: 300px;
+    width: 250px;
     margin-right: 50px;
 }
 
@@ -112,4 +132,23 @@ body {
     margin: 0 50px 0 50px;
 }
 
+footer {
+    padding: 50px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
 
+#harry-potter-animation {
+    margin: -60px 0px -20px -200px;
+    width: 150px;
+    animation: hp 4s infinite;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+}
+@keyframes hp {
+    to {
+        margin-left: 98%;
+    }
+}
