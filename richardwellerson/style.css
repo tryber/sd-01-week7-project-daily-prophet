@@ -1,61 +1,78 @@
 * {
     cursor: url("images/cursor.png"), auto;
-    background: white;
     box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
+    margin: 0 auto;
+    background: #dddddd;
+    word-break: normal;
 }
 
 header {
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    word-break: normal;
 }
 
 .coat-of-arms {
-    max-width: 10em;
-    height: 10em;
+    width: 10%;
     animation: 3s infinite;
     animation-name: shake-coat-of-arms;
+    word-break: normal;
 }
 
 .header-image {
     box-sizing: border-box;
-    max-width: 100%; 
+    max-width: 100%;
+    word-break: normal;
+}
 
+.embed-video  {
+    max-width: 30%;
+}
+
+.standard-section{
+    max-width: 37%;
+    height: auto;
+}
+
+.second-standard-section {
+    max-width: 50%;
+    height: auto;
+}
+
+.third-standard-section {
+    max-width: 63%;
+    height: auto;
 }
 
 @keyframes shake-coat-of-arms {
     20% {
-        transform: translate(0, 120%) rotate(55deg);
+        transform: rotate(55deg);
     }
     50% {
-        transform: translate(40%, 80%) rotate(33deg);
+        transform: rotate(33deg);
+        transform: scale(0.5)
     }
     80% {
-        transform: translate(-25%, 60%) rotate(-17deg);
+        transform: rotate(-17deg);
     }
     100% {
-        transform: translate(0, 0) rotate(0);
+        transform: rotate(47);
     }
 }
 
 @media screen and (max-width: 760px ){
+    
     .coat-of-arms{
-        animation: none;
-        max-width: 100%;
+        display: none;
     }
-
+    
     header{
-        box-sizing: border-box;
-        max-width: 100%;
+        align-content: center;
     }
 }
-
-
