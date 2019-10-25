@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    cursor: url('Group\ \(1\).png'),auto
+}
+
+article {
+    margin: 5%;
+    
+}
+img {
+    width: 100%;
+}
+ #coruja {
+     animation-name: coruja-voando;
+     animation-delay: 3s;
+     animation-iteration-count: 3;
+     animation-direction: alternate;
+     animation-duration: 5s;
+     width: 100px;
+     height: 100px;
+     animation-timing-function: ease;
+     animation-fill-mode: forwards;
+     display: none;
+}
+p {
+    width: 100%;
+    margin-top: 30px;
+    animation-name: texto;
+    animation-duration: 4s;
+  
+}
+#primeira-parte {
+    display: flex;
+    flex-direction: row; 
+    
+    
+}
+#segunda-parte {
+    display: flex;
+    flex-direction: row; 
+    
+}
+#reação-química {
+    width: 200px;
+    height: 200px;
+    margin-left: 10%;
+    display: none;
+}
+#nimbus {
+    transition: 1s;
+    transform: rotate(45deg);
+    animation-delay: 5s;
+    animation-duration: 15s;
+    animation-name: vassoura;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+@media (min-width: 760px) {
+    img {
+        width: 760px;
+    }
+    p {
+        width: 30%;
+    }
+    #nimbus {
+        display: initial;
+    }
+    #coruja {
+        display: initial;
+    }
+    #reação-química {
+        display: initial;
+    }
+
+}
+@keyframes coruja-voando {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 90%;
+    }
+}
+
+@keyframes vassoura {
+    0% {
+        margin-left: 0%;
+        transform: scale(10.5);
+        transform: translateY(60px);
+
+    }
+    25% {
+        margin-left: 25%;
+        transform: skew(-180deg);
+    }
+    50% {
+        margin-left: 50%;
+        transform: scale(1.5);
+        transform: translateY(60px);
+    }
+    75% {
+        margin-left: 75%;
+        transform: skew(30deg);
+    }
+    100% {
+        margin-left: 100%;
+        transform: scale(12.5);
+        transform: translateY(60px);
+    }
+}
+@keyframes texto {
+    from {
+
+    }
+    to {
+        
+    }
+
+}
