@@ -1,3 +1,61 @@
 * {
-    cursor: url("images/cursor.png"),auto;
+    cursor: url("images/cursor.png"), auto;
+    background: white;
+    box-sizing: border-box;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coat-of-arms {
+    max-width: 10em;
+    height: 10em;
+    animation: 3s infinite;
+    animation-name: shake-coat-of-arms;
+}
+
+.header-image {
+    box-sizing: border-box;
+    max-width: 100%; 
+
+}
+
+@keyframes shake-coat-of-arms {
+    20% {
+        transform: translate(0, 120%) rotate(55deg);
+    }
+    50% {
+        transform: translate(40%, 80%) rotate(33deg);
+    }
+    80% {
+        transform: translate(-25%, 60%) rotate(-17deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+@media screen and (max-width: 760px ){
+    .coat-of-arms{
+        animation: none;
+        max-width: 100%;
+    }
+
+    header{
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+}
+
+
