@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #d67900;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: 'Vollkorn', serif;
+    font-size: 16px;
+    font-size: 1rem;
+    color: #1c1915;
+}
+
+.logo-profeta {
+    animation-name: descerLogo;
+    width: 115px;
+    position: absolute;
+    left: 210px;
+    top: 58px;
+    padding: 0 0.5em;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0, -0.57, 0, 1.66);
+    animation-fill-mode: both;
+}
+
+@keyframes descerLogo {
+    20% {
+        transform: translate(0, -120%) rotate(45deg);
+        visibility: visible;
+    }
+    50% {
+        transform: translate(-40%, -80%) rotate(33deg);
+    }
+    80% {
+        transform: translate(20%, -40%) rotate(-17deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
