@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    border: 1px solid #d67900;
+    cursor: url('imagem/vara.png'), auto;
 }
 
 body {
@@ -42,4 +42,19 @@ body {
     100% {
         transform: translate(0, 0) rotate(0);
     }
+}
+
+.primeira-chamada {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.primeira-chamada p {
+    font-size: 0.9em;
+}
+
+.primeira-chamada h1 {
+    background-color: black;
+    color: white;
 }
