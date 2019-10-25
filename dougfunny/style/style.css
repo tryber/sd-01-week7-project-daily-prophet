@@ -13,6 +13,7 @@ body {
     font-size: 16px;
     font-size: 1rem;
     color: #1c1915;
+    width: 1024px;
 }
 
 .logo-profeta {
@@ -48,17 +49,42 @@ body {
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
+    height: 5.5em;
 }
 
-.primeira-chamada h1 {
+.sensacional {
     background-color: black;
     color: white;
+    padding: 5px;
+    margin: auto;
 }
 
 .primeira-coluna {
-    font-size: 0.9em;
+    font-size: 0.8em;
+    padding: 15px;
 }
 
 .segunda-coluna {
     font-size: 0.5em;
+    padding: 15px;
+}
+
+.estrela {
+    animation: estrelinha 2s linear infinite;
+    animation-direction: alternate;
+    width: fit-content;
+    width: 115px;
+    position: absolute;
+    left: 210px;
+}
+
+@keyframes estrelinha {
+    0% {
+        transform: rotate(0deg);
+        margin-left: 0px;
+    }
+    100% {
+        transform: rotate(360deg);
+        margin-left: 900px;
+    }
 }
