@@ -4,6 +4,65 @@ body {
     background: #fff8ee;
 }
 
+.owl {
+    max-width: 100px;
+    opacity: 0;
+}
+
+@keyframes moviment {
+    0% {
+        transform: translate(0px,0px)
+    }
+    5% {
+        transform: translate(240px, 30px);
+    }
+    10% {
+        opacity: 1;
+        transform: translate(500px, 0px)
+    }
+    20% {
+        transform: translate(500px, 140px)
+    }
+    30% {
+        transform: translate(0px,0px)
+    }
+    40% {
+        transform: translate(500px, 140px)
+    }
+    50% {
+        transform: translate(500px, 0px)
+    }
+    60% {
+        transform: translate(240px, 30px);
+    }
+    70% {
+        transform: translate(0px,0px)
+    }
+    80% {
+        transform: translate(240px, 30px);
+    }
+    90% {
+        transform: translate(500px, 0px)
+    }
+    95% {
+        transform: translate(500px, 140px)
+    }
+    100% {
+        transform: translate(0px,0px)
+    }
+}
+    
+
+.owl.animation-appears {
+    max-width: 100px;
+    opacity: 1 !important;
+    animation: moviment 6s normal ease-in;
+}
+
+.owl.animation-appears:hover {
+    animation-play-state: paused;
+}
+
 p {
     margin-top:5px;
 }
