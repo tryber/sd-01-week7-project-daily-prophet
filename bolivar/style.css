@@ -1,3 +1,29 @@
 * {
     box-sizing: border-box;
-  }
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.fill {
+    width: 100%;
+    height: auto;
+}
+
+#title-image {
+    width: 835px;
+    height: 130px;
+}
+
+@media screen and (max-width: 900px) {
+    #title-image {
+        width: 100%;
+        height: auto;
+    }
+}
