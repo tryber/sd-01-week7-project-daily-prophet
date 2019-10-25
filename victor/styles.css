@@ -1,5 +1,14 @@
 * {
     margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/bg-image.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #main-title {
@@ -8,8 +17,20 @@
     font-family: 'Kaushan Script', cursive;
 }
 
+#main-info img{
+    width: 90px;
+}
+
+#main-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
 #main-subtitle {
     display: flex;
     justify-content: space-between;
-    margin: 0px 50px 0px 50px;
+    margin: 10px 50px 0px 50px;
 }
+
