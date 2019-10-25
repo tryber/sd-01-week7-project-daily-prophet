@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    cursor: url("imagens/pointer.png"), auto;
+}
+
+body {
+    margin-top: 2%;
+    background-color: #0B0704;
+}
+
+main {
+    background-color: #FFF8EE;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.jornal{
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.headerImagens {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+img:first-Child {
+    display: none;
+}
+
+img:nth-child(2) {
+    width: 100%;
+    position: relative;
+    bottom: 28px;
+}
+
+header p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.hrDouble {
+    border-top: 1px double #1c1915;
+    border-bottom: 0.1875em solid #1c1915;
+    height: 0.125em;
+    margin: 0.5em auto;
+}
+
+.novidadeCabecalho{
+    margin-top: 0.5em;
+    background-color: #0B0704;
+    color: #FFF8EE;
+    font-size: 1.8em;
+}
+
+.noticiaNovidadeCabecalho {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0.3em;
+    font-weight: bold;
+}
+
+.noticiaNovidade div {
+    outline: 1px solid black;
+}
+
+.novidadeTexto {
+    font-size: 1.1em;
+    margin: 0.3em;
+}
+
+.linkNoticias { 
+    background-color: #0B0704;
+    text-align: end;
+}
+
+.linkNoticias a {
+    color: #FFF8EE;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+article {
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline: 1px solid black;
+}
+
+article h1 {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.noticiaPrincipalCabecalho {
+    font-size: 1.0em;
+    font-weight: bold;
+    margin: 0.15em;
+}
+
+.noticiaPrincipalTexto{
+    font-size: 1.0em;
+    margin: 0.6em;
+    text-align: center;
+}
+
+.dolar {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1.5em;
+}
+
+.dolar:hover {
+    animation-name: dolarRodando;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dolarRodando {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
