@@ -1,7 +1,17 @@
 body {
-    font-family: fantasy;
-    font-weight: 400;
-    background: #fff8ee;
+    font-family: 'Modern Antiqua', cursive;
+    background-image: url(images/colored_vintage_paper_texture_10_light_yellow.jpg);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4em;
 }
 
 .owl {
@@ -84,6 +94,8 @@ article section {
     flex-grow: 1;
     margin: 2px;
     justify-content: space-around;
+    align-items: center;
+    padding: 10px;
     border: 3px solid black;
     border-radius: 15px;
 }
@@ -102,6 +114,21 @@ article section h2 {
     align-self: baseline;
 }
 
+.broom {
+    max-height: 500px;
+}
+
+.banner-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@keyframes broom {
+    20% {
+        transform:scale(2.0, 2.0)
+    }
+    40%
 
 @media screen and (min-width: 760px) {
     
