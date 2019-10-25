@@ -139,7 +139,10 @@ article section h2 {
     40% {
         transform: scale(2) translateX(100px) translateY(-100px) ;
     }
-    80% {
+    60% {
+        transform: scale(2) translateX(100px) translateY(-100px) skew(80deg) ;
+    }
+    85% {
         transform: scale(2) translateX(100px) translateY(-100px) skew(160deg) ;
     }
     100% {
