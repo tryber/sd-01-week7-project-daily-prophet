@@ -34,3 +34,82 @@ body {
     margin: 10px 50px 0px 50px;
 }
 
+#first-article img {
+    width: 200px;
+    margin: 20px;
+}
+
+#first-article {
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#first-article-title {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    margin: 0 150px 0 150px;
+}
+
+#article-in-column {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 30px;
+}
+
+#second-article-title, #third-article-title {
+    padding: 5px;
+}
+
+#ad-promotion {
+    text-align: center;
+}
+#magic-broom {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 20px;
+}
+
+#magic-broom img {
+    width: 300px;
+}
+
+#magic-bloom-flying {
+    animation: magicBloom 5s infinite;
+    animation-direction: alternate;
+    transform: rotate(20deg);
+}
+
+@keyframes magicBloom {
+    form {
+        transform: translate(30px, 10px);
+    }
+    to {
+        transform: translate(30px, 10px);
+    }
+}
+
+#fourth-article {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: flex-start;
+    margin: 30px 30px 0 30px;
+}
+
+#fourth-article img {
+    width: 300px;
+    margin-right: 50px;
+}
+
+#fourth-article-title {
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0 50px 0 50px;
+}
+
+
