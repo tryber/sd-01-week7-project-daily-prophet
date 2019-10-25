@@ -115,7 +115,7 @@ article section h2 {
 }
 
 .broom {
-    max-height: 500px;
+    max-height: 200px;
 }
 
 .banner-section {
@@ -126,9 +126,19 @@ article section h2 {
 
 @keyframes broom {
     20% {
-        transform:scale(2.0, 2.0)
+        transform: scale(2) rotate(360deg);
     }
-    40%
+    40% {
+        transform: scale(2) translateX(100px) translateY(-100px) ;
+    }
+    80% {
+        transform: scale(2) translateX(100px) translateY(-100px) skew(160deg) ;
+    }
+    100% {
+        transform: scale(2)  skew(160deg) translateX(1000px) translateY(-1000px) ;
+    }
+}
+
 
 @media screen and (min-width: 760px) {
     
