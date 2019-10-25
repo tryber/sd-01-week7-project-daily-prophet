@@ -1,29 +1,114 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
 }
 
-.flex {
+body {
+    background-color: #FFF8EE;
+}
+
+.title,
+.block_img {
     display: flex;
 }
 
-.center {
+.title,
+.block_img {
     justify-content: center;
+}
+
+.title,
+.title_img {
     align-items: center;
 }
 
-.fill {
+.title,
+.block_img {
     width: 100%;
     height: auto;
+}
+
+.block {
+    width: 80%;
+    height: auto;
+}
+
+.block {
+    border-bottom: 5px solid #1c1915;
+    border-top: 5px solid #1c1915;
+    margin: 30px 0px;
+}
+
+.block_img {
+    border-bottom: 2px solid #1c1915;
+    border-top: 2px solid #1c1915;
+    margin: 0.2% 0px;
+}
+
+header>h1 {
+    display: none;
 }
 
 #title-image {
     width: 835px;
     height: 130px;
+    position: relative;
+    bottom: 25px;
 }
 
-@media screen and (max-width: 900px) {
+#symbol-image {
+    display: block;
+    width: 155px;
+    height: 150px;
+    margin-right: 3%;
+}
+
+figcaption::after {
+    content: "*";
+    margin-left: 10px;
+}
+
+figcaption::before {
+    content: "*";
+    margin-right: 10px;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
     #title-image {
         width: 100%;
         height: auto;
+        bottom: 10px;
+    }
+    #symbol-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    figcaption {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    figcaption {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #title-image {
+        bottom: 8px;
+    }
+    figcaption {
+        font-size: 7px;
     }
 }
