@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor: url('image/varinha2.png'),auto;
+}
+body{
+    background-color: #FFF8EE;
+}
+.hero-title{
+    font-family: 'mugglenewsregular';
+    font-size: 70px;
+    text-align: center;
+}
+.hero-title::before{
+    content: "";
+    border: 1px ;
+    width: 500px;
+    height: 4px;
+    display: flex;
+    background: black;
+    margin:20px auto;
+}
+.hero-title::after{
+    content: "";
+    border: 1px ;
+    width: 500px;
+    height: 4px;
+    display: flex;
+    background: black;
+    margin:20px auto;
+}
+@font-face {
+    font-family: 'mugglenewsregular';
+    src: url('mugglenews-webfont.woff2') format('woff2'),
+         url('mugglenews-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
