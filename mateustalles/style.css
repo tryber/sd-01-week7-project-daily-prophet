@@ -1,0 +1,29 @@
+body {
+    font-family: fantasy;
+    font-weight: 400;
+}
+
+* {
+    border: 1px dotted red;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main article {
+    display: flex;
+    flex-direction: column;
+}
+
+article section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.video {
+    max-width: 100%;
+}
