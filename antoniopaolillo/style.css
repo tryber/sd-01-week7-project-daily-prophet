@@ -66,6 +66,7 @@ header p {
 
 .noticiaNovidade div {
     outline: 1px solid black;
+    margin-bottom: 2%;
 }
 
 .novidadeTexto {
@@ -137,12 +138,13 @@ article h1 {
     cursor: pointer;
 }
 
-.capa {
+.capa, .silence {
     margin: auto;
+    margin-bottom: 1.5em;
 }
 
-article:last-child:hover .capa{
-    animation-duration: 6s;
+.capa:hover{
+    animation-duration: 3s;
     animation-name: capaVoando;
     animation-iteration-count: 2;
     animation-direction: alternate;
@@ -150,25 +152,52 @@ article:last-child:hover .capa{
 
 @keyframes capaVoando {
     from {
-        transform: rotate(0deg);
+        opacity: 1;
     }
-    20% {
-        transform: rotate(25deg);
-        margin-bottom: 20%;
+    
+    to {
+        opacity: 0;
     }
-    40% {
-        transform: rotate(-25deg);
-        margin-bottom: 40%;
+}
+
+.bonus {
+    background-color: #0B0704;
+    color: #FFF8EE;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.silence:hover {
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-name: silence;
+}
+
+@keyframes silence {
+    0% {
+        transform: skew(0deg);
     }
-    60% {
-        transform: rotate(25deg);
-        margin-bottom: 60%;
+    100% {
+        transform: skew(180deg);
     }
-    80% {
-        transform: rotate(-25deg);
-        margin-bottom: 80%;
+}
+
+.lua {
+    width: 10%;
+    animation-name: lua;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+
+@keyframes lua {
+    from {
+        margin-left: 0%;
     }
     to {
-        bottom: 100%;
+        margin-left: 100%;
     }
 }
