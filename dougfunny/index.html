@@ -1,69 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Profeta Diario</title>
-    <link rel="shortcut icon" type="image/x-icon" href="profetadiariofavicon.ico">
-    <style>
-        * {
-            padding:0;
-            margin:0;
-            border: 1px solid red;
-        }
-        body{
-            background-color:rgb(225,225,221);
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-            font-family: 'Vollkorn', serif;
-            font-size: 16px;
-            font-size: 1rem;
-            color: #1c1915;
-        }
-        
-        .logo-profeta{
-            animation-name: descerLogo;
-            width: 115px;
-            position: absolute;
-            left: 337px;
-            top: 58px;
-            padding: 0 0.5em;         
-            animation-timing-function: cubic-bezier(0, -0.57, 0, 1.66);      
-            animation-fill-mode: both;
-            
-        }
-        @keyframes descerLogo {
-            20%{
-                transform: translate(0, -120%) rotate(45deg);
-                visibility: visible;
-            }
-            50%{
-                transform: translate(-40%, -80%) rotate(33deg);
-            }
-            80%{
-                transform: translate(20%, -40%) rotate(-17deg);
-            }
-            100%{
-                transform: translate(0, 0) rotate(0);
-            }
-        }
-        
-                
-        
-
-    </style>
-    <!-- "https://www.dafont.com/forum/attach/orig/3/3/33381.jpg"> -->
+    <title>O Profeta Diario</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imagem/profetadiariofavicon.ico">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" media="only screen and (max-width: 760px)" href="style/mobile.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <header >
+    <header>
         <figure class="header-logo">
-            <img class="logo-profeta" src="profetalogo.png" alt="logo profeta">
-            <img src="profetadiario.jpg" alt="proteta diario logo">
+            <img class="logo-profeta" src="imagem/logoprofeta.png" alt="logo profeta">
+            <img src="imagem/profetadiario.jpg" alt="proteta diario logo">
         </figure>
-        
     </header>
-    
+
 </body>
+
 </html>
