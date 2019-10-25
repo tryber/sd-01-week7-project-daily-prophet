@@ -121,18 +121,9 @@ article h1 {
     animation-name: dolarRodando;
     animation-duration: 5s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
 
-@keyframes dolarRodando {
-    from {
-        transform: rotate(0deg);
-    }
-    
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 .linkVideoCapaInvisibilidade{
     cursor: pointer;
@@ -148,17 +139,9 @@ article h1 {
     animation-name: capaVoando;
     animation-iteration-count: 2;
     animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
-@keyframes capaVoando {
-    from {
-        opacity: 1;
-    }
-    
-    to {
-        opacity: 0;
-    }
-}
 
 .bonus {
     background-color: #0B0704;
@@ -172,16 +155,9 @@ article h1 {
     animation-duration: 3s;
     animation-iteration-count: 2;
     animation-name: silence;
+    animation-timing-function: linear;
 }
 
-@keyframes silence {
-    0% {
-        transform: skew(0deg);
-    }
-    100% {
-        transform: skew(180deg);
-    }
-}
 
 .lua {
     width: 10%;
@@ -191,13 +167,69 @@ article h1 {
     animation-iteration-count: 3;
     animation-direction: alternate;
     animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
+
+.lua:hover {
+    animation-name: none;
+}
+
+.estrela {
+    animation-name: lua;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+
+
+.vassouraAnuncioAdicionar {
+    animation-name: vassoura;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
 
 @keyframes lua {
     from {
         margin-left: 0%;
     }
     to {
-        margin-left: 100%;
+        margin-left: 91%;
+    }
+}
+
+@keyframes vassoura {
+    from {
+        transform: scale(2.0, 2.0) rotateX(360deg) translateX(50px) ;
+    }
+}
+
+@keyframes capaVoando {
+    from {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes dolarRodando {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes silence {
+    0% {
+        transform: skew(0deg);
+    }
+    100% {
+        transform: skew(180deg);
     }
 }
