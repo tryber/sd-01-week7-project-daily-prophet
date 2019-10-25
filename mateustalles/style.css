@@ -1,10 +1,11 @@
 body {
     font-family: fantasy;
     font-weight: 400;
+    background: #fff8ee;
 }
 
-* {
-    border: 1px dotted red;
+p {
+    margin-top:5px;
 }
 
 .main {
@@ -21,9 +22,51 @@ body {
 article section {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    margin: 2px;
     justify-content: space-around;
+    border: 3px solid black;
+    border-radius: 15px;
 }
 
 .video {
     max-width: 100%;
+}
+
+article section h2 { 
+    margin-top: 35px;
+    display: flex;
+}
+
+.dingbait {
+    max-width: 50px;
+    align-self: baseline;
+}
+
+
+@media screen and (min-width: 760px) {
+    
+    .main article {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    article section {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+
+    .main article:nth-child(1) > section:nth-child(1) {
+        flex-basis: 40%;
+    }
+
+    .main article:nth-child(2) > section:nth-child(1) {
+        flex-basis: 60%;
+    }
+
+    .main article:nth-child(3) > section:nth-child(1) {
+        flex-basis: 40%;
+    }
 }
