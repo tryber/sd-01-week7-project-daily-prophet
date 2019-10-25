@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    cursor: url("imagem/vara.png"), auto;
+    cursor: url("../imagem/vara.png"), auto;
 }
 
 body {
@@ -71,18 +71,30 @@ body {
 }
 
 .estrela {
-    animation: estrelinha 2s linear infinite;
+    animation: estrelinha 4s linear infinite;
     animation-direction: alternate;
-    width: fit-content;
     width: 115px;
     position: absolute;
     left: 210px;
+    animation-delay: 3s;
+}
+
+.estrela:hover {
+    animation-name: estrelinha;
+    animation-play-state: paused;
 }
 
 @keyframes estrelinha {
-    0% {
+    20% {
         transform: rotate(0deg);
         margin-left: 0px;
+    }
+    50% {
+        transform: translate(-40%, -80%) rotate(33deg);
+        margin-top: 0%;
+    }
+    80% {
+        transform: translate(20%, -40%) rotate(-17deg);
     }
     100% {
         transform: rotate(360deg);
@@ -121,4 +133,5 @@ body {
     display: flex;
     justify-content: center;
     margin: auto;
+    padding: 15px;
 }

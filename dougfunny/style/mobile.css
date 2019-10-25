@@ -5,7 +5,6 @@
 }
 
 body {
-    cursor: url('imagem/varinha2.png'), auto;
     background-color: #fff8ee;
     display: flex;
     margin: 0 auto;
@@ -14,6 +13,10 @@ body {
     font-size: 16px;
     font-size: 1rem;
     color: #1c1915;
+}
+
+.logo-profeta {
+    display: none;
 }
 
 .primeira-chamada {
