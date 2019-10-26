@@ -5,62 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="only screen and (max-width:760px)" href="mobile.css">
+    <link rel="stylesheet" media="only screen and (max-width:500px)" href="mobile500.css">
+    <link rel="stylesheet" media="only screen and (max-width:760px) and (min-width:500px)" href="mobile.css">
     <title>NEWSPAPER</title>
+    
 </head>
-
-<body>
-    <main>
-        <header></header>
-        <section></section>
-    </main>
-</body>
-
-
-
-
-
-<!-- 
 <body>
     <main>
         <header>
             <nav>
-                <span class="title-page center">
-                    <img class="logo" src="/imagens/daily-prophet-symbol.png" alt="Logo do Jornal">
+                <hr class="hr-large hr-top">
+                <hr class="hr-small hr-top">
+                <figure>
                     <img class="title-img" src="/imagens/daily-prophet-title.svg" alt="Titulo do jornal">
-                </span>
-                
-                <h3 class="subtitle">The Wizard world's Beguiling broadsheet of choice</h3> 
-                <ul class="date">
-                    <li class="number-day">22</li>
-                    <li class="number-day-of-weak">Friday</li>
-                    <li class="number-mounth">October</li>
-                    <li class="number-year">2019</li>
+                    <h3 class="subtitle">The Wizard world's Beguiling broadsheet of choice</h3> 
+                </figure>
+                <ul>
+                    <li>Principal</li>
+                    <li>Politica</li>
+                    <li>Esporte</li>
+                    <li>Classificados</li>
                 </ul>
+                <hr class="hr-small">
+                <hr class="hr-large">
             </nav>
         </header>
         
         
         
         
-        <section class="main-notice">
-            <article class="notice">
-                <div class="top">
-                    <h1>
-                        <span class="title">
-                            Lorem ipsum mollis aliquam. 
-                        </span>
-                    </h1>
-                    <figure>
-                        <img src="imagens/transferir.jpeg" alt="">
-                        <figcaption>
-                            Lorem ipsum ligula elit, tincidunt taciti. 
-                        </figcaption>
-                    </figure>
+        <article>
+            <section class="notice top"> 
+                <div class="title-notice">
+                    <p class="title-news">
+                        <strong class="extra">
+                            Extra!
+                        </strong>
+                        <strong class="extra">
+                            Extra!
+                        </strong>
+                        <strong class="sub">
+                            GORDAO Voltou. 
+                        </strong>
+                    </p>
+                    <img src="imagens/transferir.jpeg" alt="">
                 </div>
                 <p class="content">
-                    
-                    <span class="first-letter">L</span> orem ipsum ullamcorper nisi tincidunt commodo gravida 
+                    <strong class="first-letter shadow-letter">L</strong> orem ipsum ullamcorper nisi tincidunt commodo gravida 
                     senectus aliquam congue ornare,
                     inceptos rhoncus ut massa blandit lacinia egestas consectetur. 
                     
@@ -78,25 +69,22 @@
                     varius sociosqu convallis lobortis ut curabitur rutrum. 
                     
                 </p>
-            </article>
-        </section>
-        
-        
-        
-        <section class="report notice">
-            <article class="notice">
+            </section>
+            
+            
+            <section class="notice">
                 <h1>
-                    <span class="title second-notice">
+                    <strong class="title-news shadow-letter">
                         POLITICA
-                    </span>
+                    </strong>
                 </h1>
-                <h3 class="sub-title">
+                <h3 class="sub">
                     Lorem ipsum ac nisi etiam amet metus odio felis, euismod curae nam suspendisse aenean eget. 
                 </h3>
-                <div class="grid-3 nowrap">
+                <div class="grid-2">
                     <p class="content">
                         <span class="content left"> 
-                            <span class="first-letter">L</span> ipsum ullamcorper aliquet eget libero netus neque,
+                            <span class="first-letter shadow-letter">L</span> ipsum ullamcorper aliquet eget libero netus neque,
                             ullamcorper sapien interdum consectetur tempor.
                             odio curabitur in dui leo donec justo neque etiam felis,
                             ad aenean dui auctor ornare vivamus molestie suscipit id fringilla,
@@ -108,91 +96,215 @@
                             neque ut ad aliquam felis. 
                             ornare ac platea est laoreet, orci suscipit amet. 
                         </span>
-                        
                     </p>
                 </div>
-            </article>
-        </section>
-        
-        <section class="notice sport">
-            <article class="notice">
+            </section>
+            
+            <section class="notice">
                 <h1>
-                    <span class="title third-notice">
+                    <strong class="title-news shadow-letter">
                         Sport!   
-                    </span>
+                    </strong>
                 </h1>
-                <article>
+                <section class="score">
+                        <span class="first-team">Grifinoia</span>
+                        <span class="number">20</span>
+                        <span> x</span>
+                        <span class="number">20</span>
+                        <span class="second-team">Espectros</span>
+                    </section>
+                <section>
                     <p class="content">
-                        <span class="first-letter">R</span> ipsum massa maecenas faucibus vel, nibh vulputate ut diam nullam iaculis,
+                        <span class="first-letter shadow-letter">R</span> ipsum massa maecenas faucibus vel, nibh vulputate ut diam nullam iaculis,
                         quisque mattis sollicitudin lacinia. 
                         volutpat mattis nec mattis placerat dui lectus,
                         aliquet suspendisse volutpat duis aliquam pharetra hendrerit,
                         condimentum convallis eros conubia augue.  
                     </p>
+                </section>
+                
+            </section>
+            
+        </article>
+    </main>
+</body>
+</html>
+
+
+
+<!-- 
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <span class="title-page center">
+                        <img class="logo" src="/imagens/daily-prophet-symbol.png" alt="Logo do Jornal">
+                        <img class="title-img" src="/imagens/daily-prophet-title.svg" alt="Titulo do jornal">
+                    </span>
+                    
+                    <h3 class="subtitle">The Wizard world's Beguiling broadsheet of choice</h3> 
+                    <ul class="date">
+                        <li class="number-day">22</li>
+                        <li class="number-day-of-weak">Friday</li>
+                        <li class="number-mounth">October</li>
+                        <li class="number-year">2019</li>
+                    </ul>
+                </nav>
+            </header>
+            
+            
+            <section class="main-notice">
+                <article class="notice">
+                    <div class="top">
+                        <h1>
+                            <span class="title">
+                                Lorem ipsum mollis aliquam. 
+                            </span>
+                        </h1>
+                        <figure>
+                            <img src="imagens/transferir.jpeg" alt="">
+                            <figcaption>
+                                Lorem ipsum ligula elit, tincidunt taciti. 
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <p class="content">
+                        
+                        <span class="first-letter">L</span> orem ipsum ullamcorper nisi tincidunt commodo gravida 
+                        senectus aliquam congue ornare,
+                        inceptos rhoncus ut massa blandit lacinia egestas consectetur. 
+                        
+                        
+                        interdum iaculis pharetra purus rutrum vulputate. risus erat 
+                        rhoncus suspendisse arcu vulputate consectetur fringilla lobortis 
+                        sodales inceptos nisi ad blandit lacinia porttitor non, mauris 
+                        tincidunt velit dictumst accumsan feugiat tristique turpis 
+                        varius sociosqu convallis lobortis ut curabitur rutrum. 
+                        
+                        interdum iaculis pharetra purus rutrum vulputate. risus erat 
+                        rhoncus suspendisse arcu vulputate consectetur fringilla lobortis 
+                        sodales inceptos nisi ad blandit lacinia porttitor non, mauris 
+                        tincidunt velit dictumst accumsan feugiat tristique turpis 
+                        varius sociosqu convallis lobortis ut curabitur rutrum. 
+                        
+                    </p>
                 </article>
-                <aside>
-                    <span class="first-team">TIME 1</span>
-                    <span class="score">20</span>
-                    <span class="score"> x</span>
-                    <span class="score">20</span>
-                    <span class="second-team"> TIME 2</span>
-                </aside>
+            </section>
+            
+            
+            
+            
+            
+            <section class="report notice">
+                <article class="notice">
+                    <h1>
+                        <span class="title second-notice">
+                            POLITICA
+                        </span>
+                    </h1>
+                    <h3 class="sub-title">
+                        Lorem ipsum ac nisi etiam amet metus odio felis, euismod curae nam suspendisse aenean eget. 
+                    </h3>
+                    <div class="grid-3 nowrap">
+                        <p class="content">
+                            <span class="content left"> 
+                                <span class="first-letter">L</span> ipsum ullamcorper aliquet eget libero netus neque,
+                                ullamcorper sapien interdum consectetur tempor.
+                                odio curabitur in dui leo donec justo neque etiam felis,
+                                ad aenean dui auctor ornare vivamus molestie suscipit id fringilla,
+                                senectus primis vehicula ad mollis dapibus vitae lorem.
+                            </span>
+                            <span class="content right">
+                                Lorem ipsum bibendum arcu praesent fames massa, 
+                                tempus diam convallis curabitur varius convallis,
+                                neque ut ad aliquam felis. 
+                                ornare ac platea est laoreet, orci suscipit amet. 
+                            </span>
+                            
+                        </p>
+                    </div>
+                </article>
+            </section>
+            
+            <section class="notice sport">
+                <article class="notice">
+                    <h1>
+                        <span class="title third-notice">
+                            Sport!   
+                        </span>
+                    </h1>
+                    <article>
+                        <p class="content">
+                            <span class="first-letter">R</span> ipsum massa maecenas faucibus vel, nibh vulputate ut diam nullam iaculis,
+                            quisque mattis sollicitudin lacinia. 
+                            volutpat mattis nec mattis placerat dui lectus,
+                            aliquet suspendisse volutpat duis aliquam pharetra hendrerit,
+                            condimentum convallis eros conubia augue.  
+                        </p>
+                    </article>
+                    <aside>
+                        <span class="first-team">TIME 1</span>
+                        <span class="score">20</span>
+                        <span class="score"> x</span>
+                        <span class="score">20</span>
+                        <span class="second-team"> TIME 2</span>
+                    </aside>
+                </article>
+            </section>
+            
+            
+            <section class="notice Classificados">
+                <article class="notice grid-3 wrap">
+                    <div class="top"></div>
+                    <h1>
+                        <span class="title four-notice">
+                            Classificados
+                        </span>
+                    </h1>
+                </div>
+                
+                <div class="bottom content-classificados left">
+                    <figure class="product">
+                        <h3 class="name-product">Varinha</h3>
+                        <img src="/imagens/Fenrir_Greyback_wand-600x315.png" alt="" class="img-product">
+                        <span class="value-product">300$</span>
+                        <span class="descrition-product">MUITO BOA, Novinha, Nao recomendado para crianças</span>
+                    </figure>
+                </div>
+                
+                <div class="bottom content-classificados right">
+                    <figure class="product">
+                        <h3 class="name-product">Vassoura</h3>
+                        <img src="/imagens/vassoura.png" alt="" class="img-product">
+                        <span class="value-product">550$</span>
+                        <span class="descrition-product">MUITO UTILE  E LEGAL, POUCO USADO</span>
+                    </figure>
+                </div>
             </article>
         </section>
         
         
-        <section class="notice Classificados">
-            <article class="notice grid-3 wrap">
-                <div class="top"></div>
-                <h1>
-                    <span class="title four-notice">
-                        Classificados
-                    </span>
-                </h1>
-            </div>
-            
-            <div class="bottom content-classificados left">
-                <figure class="product">
-                    <h3 class="name-product">Varinha</h3>
-                    <img src="/imagens/Fenrir_Greyback_wand-600x315.png" alt="" class="img-product">
-                    <span class="value-product">300$</span>
-                    <span class="descrition-product">MUITO BOA, Novinha, Nao recomendado para crianças</span>
-                </figure>
-            </div>
-            
-            <div class="bottom content-classificados right">
-                <figure class="product">
-                    <h3 class="name-product">Vassoura</h3>
-                    <img src="/imagens/vassoura.png" alt="" class="img-product">
-                    <span class="value-product">550$</span>
-                    <span class="descrition-product">MUITO UTILE  E LEGAL, POUCO USADO</span>
-                </figure>
-            </div>
-        </article>
+        
+        <aside class="history">
+            <h3> </h3>
+            <p class="content-column">
+                
+            </p>
+        </aside>
+        
+        
+        
+        
+        <footer>
+            <span>AUTOR</span>
+            <ul>
+                <li><a href=""><span class="headline">Principal</span></a></li>
+                <li><a href=""><span class="headline">Esportes</span></a></li>
+                <li><a href=""><span class="headline">Investigação</span></a></li>
+                <li><a href=""><span class="headline">classificados</span></a></li>
+            </ul>
+        </footer>
     </section>
-    
-    
-    
-    <aside class="history">
-        <h3> </h3>
-        <p class="content-column">
-            
-        </p>
-    </aside>
-    
-    
-    
-    
-    <footer>
-        <span>AUTOR</span>
-        <ul>
-            <li><a href=""><span class="headline">Principal</span></a></li>
-            <li><a href=""><span class="headline">Esportes</span></a></li>
-            <li><a href=""><span class="headline">Investigação</span></a></li>
-            <li><a href=""><span class="headline">classificados</span></a></li>
-        </ul>
-    </footer>
-</section>
 </main> -->
 
 
