@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "Mugglenews";
+    src: url(fonts/mugglenews.ttf);
+}
+
+* {
+    cursor: url('img/varinha1.png'),auto;
+    font-family: 'Vollkorn', serif;
+}
+
+body {
+    background-image: url("img/woodbg.jpg");
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.title-font {
+    font-family: "Mugglenews";
+    margin-bottom: 0;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.newspaper {
+    margin: 16px 0px;
+    padding: 16px;
+    background: #fff8ee;
+    fill: #1c1915;
+    border-radius: 16px;
+    box-shadow: none;
+    width: 100%;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    position: relative;
+}
+
+.newspaper-topheader {
+    padding-top: 8px;
+    text-align: center;
+}
+
+.logo-shield {
+    display: none;
+    position: relative;
+}
+
+.header-title {
+    width: 100%;
+    bottom: 15px;
+    position: relative;
+}
+
+.header-subtitle {
+    font-family: 'Kreon', serif;
+    letter-spacing: 4px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hr-double-top {
+	border-top: 3px solid #1c1915;
+    border-bottom: 1px solid #1c1915;
+    height: 2px;
+    position: relative;
+    top: 3px;
+}
+
+.hr-double-bottom {
+	border-top: 1px solid #1c1915;
+    border-bottom: 3px solid #1c1915;
+    height: 2px;
+}
+
+.header-navbar {
+    border-bottom: 1px dashed #1c1915;
+}
+
+ul {
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff8ee;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+li a {
+    color: #1c1915;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Mugglenews";
+}
+
+li a:hover {
+  font-weight: bolder;
+}
+
+.article-with-image {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    border-bottom: 1px dashed #1c1915;
+}
+
+.article-img {
+    max-width: 230px;
+    width: 40%;
+    height: 40%;
+    animation-name: article-img;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.article-text {
+    margin-top: 3%;
+    width: 60%;
+    font-size: 13px;
+}
+
+@keyframes article-img {
+    50% {
+        transform: rotate(40deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.weather-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #1c1915;
+}
+
+.weather-container {
+    margin: 2% 1px;
+    border: 3px double #1c1915;
+    width: 22%;
+    min-width: 50px;
+    height: 100px;
+}
+
+.raining-gif {
+    position: absolute;
+    width: 97%;
+    height: 125px;
+}
+
+@media screen and (min-width: 1024px) {
+    .newspaper {
+        max-width: 1024px;
+    }
+
+    .hr-double-top {
+        top: 15px;
+    }
+
+    .header-subtitle {
+        font-size: 17px;
+    }
+
+    li a {
+        font-size: 18px;
+    }
+
+    .article-img {
+        width: 30%;
+        height: 30%;
+    }
+    
+    .article-text {
+        width: 70%;
+        font-size: 21px;
+    }
+
+    .weather-container {
+        height: 125px;
+    }
+
+    .raining-gif {
+        height: 170px;
+    }
+}
+
+@media screen and (min-width: 761px) {
+    .logo-shield {
+        width: 15%;
+        display: block;
+    }
+
+    .header-title {
+        width: 84%;
+        bottom: 27px;
+    }
+
+    .header-subtitle {
+        font-size: 13px;
+    }
+
+    .hr-double-top {
+        top: 6px;
+    }
+
+    ul {
+        margin: 15px 0;
+    }
+
+    li a {
+        font-size: 17px;
+    }
+
+    .article-img {
+        width: 35%;
+        height: 35%;
+    }
+    
+    .article-text {
+        width: 70%;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hr-double-top {
+        top: -5px;
+    }
+
+    .header-subtitle {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    li a {
+        font-size: 13px;
+    }
+
+    .article-img {
+        display: none;
+    }
+    
+    .article-text {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .title-font {
+        font-size: 12px;
+    }
+
+    .weather-container {
+        height: 50px;
+        margin: 2% 1px;
+    }
+
+    .raining-gif {
+        display: none;
+    }
+}
