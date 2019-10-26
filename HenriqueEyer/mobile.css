@@ -1,4 +1,29 @@
-* { 
+* {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * { 
     margin:0px;
     padding:0px;
     box-sizing: border-box;
@@ -25,7 +50,7 @@ main {
 header {
     padding:20px;
     height: 200px;
-    width: 100%;
+    width: 90%;
     
 }
 
@@ -45,9 +70,6 @@ section, footer {
     visibility: hidden;
     width: 0;
 }
-
-
-
 
 .title-img {
     width: 90%;
@@ -127,4 +149,4 @@ aside{
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
-}
+} */
