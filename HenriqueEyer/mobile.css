@@ -104,6 +104,14 @@ nav ul li {
     width: 25%;
 }
 
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #fff8ee;
+    }
+    
+a:hover {
+    color:black;
+}
 
 nav ul li:hover {
     background: yellow;
@@ -147,7 +155,7 @@ section {
     width: 100%;
 }
 
-.sub{
+.sub {
     font-size: 5vw;
     text-align: justify;
 }
