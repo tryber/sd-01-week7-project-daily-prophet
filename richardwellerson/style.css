@@ -8,6 +8,7 @@ body {
     margin: 0 auto;
     background: #dddddd;
     word-break: normal;
+    text-align: justify;
 }
 
 nav {
@@ -43,11 +44,11 @@ header {
     position: relative;
 }
 
-.embed-video  {
+.embed-video {
     max-width: 30%
 }
 
-.standard-section{
+.standard-section {
     max-width: 100%;
     height: auto;
 }
@@ -89,16 +90,14 @@ article {
     }
 }
 
-@media screen and (max-width: 760px ){
-    
-    .coat-of-arms{
+@media screen and (max-width: 760px) {
+    .coat-of-arms {
         display: none;
     }
-    
-    header{
+    header {
         align-content: center;
     }
-    .standard-section, .second-standard-section, .third-standard-section{
+    .standard-section, .second-standard-section, .third-standard-section {
         max-width: 100%;
     }
 }
