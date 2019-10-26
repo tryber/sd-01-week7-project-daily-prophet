@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    width: 100%;
+    width: 100vw;
     height: auto;
     background:#fff8ee;
     margin: 0 auto;
@@ -37,8 +37,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
-    outline: 1px red solid;
+
     font-size: 1.2rem;
     text-align: center;
 }
@@ -60,7 +59,6 @@ article {
 
 section {
     width: 50%;
-    margin: 1px;
     height: 30%;
 }
 
@@ -123,8 +121,13 @@ section {
     flex-direction: column;
     height: auto;
     width: 100%;
-    border:1px solid black;
+    outline:1px solid black;
     padding: 10px;
+}
+
+.center {
+    align-items: center;
+    justify-items: center;
 }
 
 .top {
@@ -180,6 +183,56 @@ p.content {
     text-shadow: 0.2rem 0.2rem rgb(255, 136, 0);
 }
 
+.score {
+    align-items: center;
+    font-size: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    background: black;
+    padding: 10px;
+    border-radius: 20px;
+    color:#fff8ee;
+    font-weight: bold;
+}
+
+
+.team {
+    padding: 1px 5px 1px 5px;
+    background: black;
+}
+
+.product {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px black solid;
+    height: 100%;
+}
+
+.product img {
+    width: 50%;
+    height: 50%;
+}
+
+.sell-products {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.details {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 
 
 /* * { 
