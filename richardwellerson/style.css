@@ -1,6 +1,7 @@
 * {
     cursor: url("images/cursor.png"), auto;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 
 body {
@@ -9,7 +10,17 @@ body {
     word-break: normal;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: #dddddd;
+    padding: 1%;
+    border: 2px solid whitesmoke;
+}
+
 header {
+    padding: 5%;
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -29,14 +40,15 @@ header {
     box-sizing: border-box;
     max-width: 100%;
     word-break: normal;
+    position: relative;
 }
 
 .embed-video  {
-    max-width: 30%;
+    max-width: 30%
 }
 
 .standard-section{
-    max-width: 37%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -48,6 +60,17 @@ header {
 .third-standard-section {
     max-width: 63%;
     height: auto;
+}
+
+article {
+    padding: 5%;
+}
+
+.align-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes shake-coat-of-arms {
@@ -74,5 +97,8 @@ header {
     
     header{
         align-content: center;
+    }
+    .standard-section, .second-standard-section, .third-standard-section{
+        max-width: 100%;
     }
 }
