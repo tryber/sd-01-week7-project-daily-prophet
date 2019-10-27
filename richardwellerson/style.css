@@ -103,11 +103,14 @@ footer {
 @keyframes shake-coat-of-arms {
     20% {
         transform: rotate(55deg);
-        transform: skew(20deg, 25deg);
+        transform: skew(20deg, 25deg) translate(0, -100%);
+        
+    }
+    30%{
+        transform: translate(0, -50%);
     }
     50% {
         transform: rotate(33deg);
-        transform: scale(0.5)
     }
     80% {
         transform: rotate(-17deg);
