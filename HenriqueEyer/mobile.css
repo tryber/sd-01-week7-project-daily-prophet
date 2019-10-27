@@ -103,12 +103,12 @@ nav ul {
     font-weight: bold;
     
 }
-nav ul li {
+header nav ul li {
     width: 25%;
 }
 
 
-nav ul li:hover {
+header nav ul li:hover {
     background: yellow;
     color: black;
 }

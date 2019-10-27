@@ -30,7 +30,6 @@ main {
     align-items: center;
 }
 
-
 header {
     width: 100%;
     height: 300px;
@@ -188,7 +187,11 @@ section {
 .two {
     width: 42%;
     align-self: flex-start;
+    background: grey;
+    color: #fff8ee;
 }
+
+
 
 .tree {
     width: 58%;
@@ -324,26 +327,12 @@ section {
     align-items: center;
 }
 
-
-
-
-
-
-
-
 figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-
-
-
-
-
-
-
 
 footer {
     width: 90%;
@@ -377,4 +366,22 @@ footer img {
 
 .columns-text {
     font-weight: normal;
+}
+
+.object-animated {
+    animation: fly 3s ease-in 3s 3 alternate forwards;
+}
+
+.object-animated:hover {
+    animation-play-state: paused;
+}
+@keyframes fly {
+    0% {
+      transform: translate(-800px, -1300px) scale(0.2,0.2);
+      
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1,1);
+    }
+ 
 }
