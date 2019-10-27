@@ -94,6 +94,7 @@ img {
     animation-direction: alternate;
     width: 115px;
     position: absolute;
+    animation-delay: 3s;
 }
 
 .estrela:hover {
