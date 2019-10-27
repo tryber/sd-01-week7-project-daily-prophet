@@ -197,7 +197,9 @@ section {
 p.content {
     padding: 0px 5px 5px 5px;
     font-size: 2rem;
-    text-align: left;
+    text-align: left;.desktop {
+        display: none;
+    }
 }
 
 .first-letter {
@@ -294,5 +296,13 @@ footer img {
 }
 
 .footer-txt {
+    display: none;
+}
+
+.columns-text {
+    font-weight:normal;
+}
+
+.desktop {
     display: none;
 }
