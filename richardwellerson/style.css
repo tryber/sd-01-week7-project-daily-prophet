@@ -115,7 +115,6 @@ footer {
 .nimbus {
     width: 10%;
     height: 10%;
-    animation: nimbus 5s infinite;
     animation-fill-mode: forwards;
     transition: 1s;
     animation-delay: 3s;
@@ -123,16 +122,16 @@ footer {
 
 @keyframes nimbus {
      25% {
-         transform: scale(2.0) rotate(-385deg);
+         transform: scale(2.0);
      }
      50%{
-
+        transform: rotate(-20deg);
      }
      75%{
-
+        transform: translate(0,-100%);
      }
      100%{
-
+        transform: skew(20deg);
      }
 }
 
