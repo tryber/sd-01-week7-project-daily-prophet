@@ -113,17 +113,29 @@ footer {
     animation: none;
 }
 
-#nimbus {
-    width: 30%;
-    height: 30%;
+.nimbus {
+    width: 10%;
+    height: 10%;
     animation: nimbus 5s infinite;
+    animation-fill-mode: forwards;
     transition: 1s;
     animation-delay: 3s;
 }
 
 @keyframes nimbus {
-     
-}
+     25% {
+         transform: scale(2.0) rotate(-385deg);
+     }
+     50%{
+
+     }
+     75%{
+
+     }
+     100%{
+         
+     }
+
 
 @keyframes flyes {
     0% {
