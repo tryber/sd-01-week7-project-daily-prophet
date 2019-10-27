@@ -14,6 +14,9 @@ body {
     max-width: 1050px;
     width: 100%;
 }
+img{
+    width: 100%;
+ }
 
 .logotipo {
     margin-top: 3%;
@@ -191,6 +194,15 @@ body {
     padding: 15px;
     position: relative;
 
+}
+
+@media only screen and (max-width: 460px){
+    .vassoura{
+        display: none;
+    }
+    #clicar{
+        display: none;
+    }
 }
 
 .propaganda {

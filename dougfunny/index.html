@@ -12,12 +12,12 @@
     
 </head>
 
-<body>
+<body onresize="larguraDaTela()">
     <header>
         <div class="logotipo">
             <figure>
                 <img class="logo-profeta" src="imagem/profetalogo.png" alt="logo profeta" />
-                <img src="imagem/profetadiario.png" alt="proteta diario logo" />
+                <img id="cabecalho" src="imagem/profetadiario.png" alt="proteta diario logo" />
             </figure>
         </div>
     </header>
@@ -74,16 +74,16 @@
         <hr>
         <section>
             <div class="ativavasoura">
-            <figure>
-                <img class="vassoura" onclick="animarVassoura()" src="imagem/Nimbus_2000.png" alt="vassoura">
-            </figure>
-            <span>
-                <p class="propaganda">
-                    Cansado de perder nos torneios Tribruxo? <Strong> Seus problemas acabaram!!! Apresentamos a novíssima Nimbus 2000!</Strong>
-                    A única do mercado que consegue antingir Mack-1 e fazer 360º em uma única manobra!!! passe na frente de todos <em>Vença!!!</em> <strong>Clique na vassoura.</strong>
-                </p>
-            </span>
-        </div>
+                <figure>
+                    <img class="vassoura" onclick="animarVassoura()" src="imagem/Nimbus_2000.png" alt="vassoura">
+                </figure>
+                <span>
+                    <p class="propaganda">
+                        Cansado de perder nos torneios Tribruxo? <Strong> Seus problemas acabaram!!! Apresentamos a novíssima Nimbus 2000!</Strong>
+                        A única do mercado que consegue antingir Mack-1 e fazer 360º em uma única manobra!!! passe na frente de todos <em>Vença!!!</em> <strong id="clicar">Clique na vassoura.</strong>
+                    </p>
+                </span>
+            </div>
         </section>
         <footer>
             <div class="rodape">
