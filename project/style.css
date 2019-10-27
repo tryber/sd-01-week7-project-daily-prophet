@@ -1,66 +1,99 @@
 * {
     margin: 0px;
     padding: 0px;
-    cursor: url('Group\ \(1\).png'),auto
+    cursor: url('Group\ \(1\).png'),auto;
 }
 
 article {
     margin: 5%;
-    
+    text-align: justify;
+    border: solid 1px black;
+    padding-bottom: 10px;
 }
 img {
     width: 100%;
+    
 }
- #coruja {
-     animation-name: coruja-voando;
-     animation-delay: 3s;
-     animation-iteration-count: 3;
-     animation-direction: alternate;
-     animation-duration: 5s;
-     width: 100px;
-     height: 100px;
-     animation-timing-function: ease;
-     animation-fill-mode: forwards;
-     display: none;
+#coruja {
+    animation-name: coruja-voando;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    width: 100px;
+    height: 100px;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    display: none;
 }
-p {
+#coruja:hover {
+    animation-play-state: paused;
+}
+h1{
+    font-size: 8mm;
+}
+h1, p {
     width: 100%;
     margin-top: 30px;
     animation-name: texto;
     animation-duration: 4s;
-  
+    margin-left: 5%;
 }
+
 #primeira-parte {
     display: flex;
     flex-direction: row; 
-    
-    
 }
 #segunda-parte {
     display: flex;
     flex-direction: row; 
-    
 }
 #reação-química {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     margin-left: 10%;
     display: none;
 }
-#nimbus {
+#anuncio {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.nimbus {
+    animation-duration: 10s;
     transition: 1s;
-    transform: rotate(45deg);
-    animation-delay: 5s;
-    animation-duration: 15s;
     animation-name: vassoura;
-    width: 100px;
-    height: 100px;
-    display: none;
+
+}
+#nimbus {
+    transform: rotate(20deg);
+    animation-name: vassoura;
+    width: 20%;
+    height: 20%;
+}
+nav {
+    display: flex;
+    margin-left: 10%;
+}
+footer {
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (min-width: 760px) {
+
+@media screen and (min-width: 760px) {
     img {
         width: 760px;
+    }
+    header {
+        display: flex;
+        justify-content: center;
     }
     p {
         width: 30%;
@@ -74,7 +107,18 @@ p {
     #reação-química {
         display: initial;
     }
-
+    footer {
+         display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 380px) {
+    #segunda-parte {
+        flex-direction: column; 
+    } 
+    #anuncio {
+        flex-direction: column;
+    }
 }
 @keyframes coruja-voando {
     from {
@@ -87,36 +131,9 @@ p {
 
 @keyframes vassoura {
     0% {
-        margin-left: 0%;
-        transform: scale(10.5);
-        transform: translateY(60px);
-
-    }
-    25% {
-        margin-left: 25%;
-        transform: skew(-180deg);
-    }
-    50% {
-        margin-left: 50%;
-        transform: scale(1.5);
-        transform: translateY(60px);
-    }
-    75% {
-        margin-left: 75%;
-        transform: skew(30deg);
+        transform: scale(1.0)
     }
     100% {
-        margin-left: 100%;
-        transform: scale(12.5);
-        transform: translateY(60px);
+        transform: scale(1.5)
     }
-}
-@keyframes texto {
-    from {
-
-    }
-    to {
-        
-    }
-
 }
