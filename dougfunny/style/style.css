@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    cursor: url("../imagem/vara.png");
 }
 
 body {
@@ -14,9 +15,10 @@ body {
     max-width: 1050px;
     width: 100%;
 }
-img{
+
+img {
     width: 100%;
- }
+}
 
 .logotipo {
     margin-top: 3%;
@@ -72,7 +74,6 @@ img{
 .primeira-coluna {
     font-size: 1em;
     padding: 15px;
-
 }
 
 .primeira-coluna:active {
@@ -89,11 +90,10 @@ img{
 }
 
 .estrela {
-    animation: estrelinha 4s linear infinite;
+    animation: estrelinha 4s normal infinite;
     animation-direction: alternate;
     width: 115px;
     position: absolute;
-
 }
 
 .estrela:hover {
@@ -106,13 +106,16 @@ img{
         transform: rotate(180deg);
         margin-left: 28px;
     }
+
     50% {
         transform: translate(-40%, -80%) rotate(90deg);
         margin-top: 51%;
     }
+
     80% {
         transform: translate(20%, -40%) rotate(360deg);
     }
+
     100% {
         transform: rotate(90deg);
         margin-left: 900px;
@@ -196,11 +199,12 @@ img{
 
 }
 
-@media only screen and (max-width: 460px){
-    .vassoura{
+@media only screen and (max-width: 460px) {
+    .vassoura {
         display: none;
     }
-    #clicar{
+
+    #clicar {
         display: none;
     }
 }
