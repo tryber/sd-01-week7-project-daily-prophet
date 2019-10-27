@@ -104,7 +104,6 @@ footer {
     height: 10em;
     margin-left: 0;
     position: absolute;
-    animation: flyes 5s infinite;
     transition: 1s;
     animation-delay: 3s;
 }
@@ -133,9 +132,9 @@ footer {
 
      }
      100%{
-         
-     }
 
+     }
+}
 
 @keyframes flyes {
     0% {
