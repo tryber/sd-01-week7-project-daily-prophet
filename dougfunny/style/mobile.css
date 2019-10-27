@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    border: 1px solid #d67900;
+    border: 1px solid #000000;
 }
 
 body {
@@ -13,12 +13,4 @@ body {
     font-size: 16px;
     font-size: 1rem;
     color: #1c1915;
-}
-
-.logo-profeta {
-    display: none;
-}
-
-.primeira-chamada {
-    display: flex;
 }
