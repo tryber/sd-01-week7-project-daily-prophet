@@ -1,7 +1,6 @@
 * {
     cursor: url("images/cursor.png"), auto;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
 
 body {
@@ -100,14 +99,46 @@ footer {
     color: white;
 }
 
+#golden-ball {
+    width: 10em;
+    height: 10em;
+    margin-left: 0;
+    position: absolute;
+    animation: flyes 5s infinite;
+    transition: 1s;
+    animation-delay: 3s;
+}
+
+#golden-ball:hover{
+    animation: none;
+}
+
+@keyframes flyes {
+    0% {
+        margin-left: 0;
+    }
+    
+    35% {
+        margin-left: 30%;
+        transform: skew(-30deg) translate(0, -130%);
+    }
+
+    70% {
+        transform: skew(100deg);
+        margin-left: 73%;
+        transform: translate(-20%, 109%);
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
 @keyframes shake-coat-of-arms {
     20% {
         transform: rotate(55deg);
-        transform: skew(20deg, 25deg) translate(0, -100%);
+        transform: translate(0, -100%) skew(20deg, 25deg);
         
-    }
-    30%{
-        transform: translate(0, -50%);
     }
     50% {
         transform: rotate(33deg);
