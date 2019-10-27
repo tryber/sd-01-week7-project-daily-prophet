@@ -113,6 +113,18 @@ footer {
     animation: none;
 }
 
+#nimbus {
+    width: 30%;
+    height: 30%;
+    animation: nimbus 5s infinite;
+    transition: 1s;
+    animation-delay: 3s;
+}
+
+@keyframes nimbus {
+     
+}
+
 @keyframes flyes {
     0% {
         margin-left: 0;
@@ -120,12 +132,11 @@ footer {
     
     35% {
         margin-left: 30%;
-        transform: skew(-30deg) translate(0, -130%);
+        transform: skew(-30deg) translate(0, -30%);
     }
 
     70% {
         transform: skew(100deg);
-        margin-left: 73%;
         transform: translate(-20%, 109%);
     }
 
@@ -137,12 +148,13 @@ footer {
 @keyframes shake-coat-of-arms {
     20% {
         transform: rotate(55deg);
-        transform: translate(0, -100%) skew(20deg, 25deg);
-        
+        transform: translate(0, -100%) skew(20deg, 25deg);  
     }
+
     50% {
         transform: rotate(33deg);
     }
+
     80% {
         transform: rotate(-17deg);
     }
@@ -155,6 +167,11 @@ footer {
     .coat-of-arms {
         display: none;
     }
+
+    #golden-ball{
+        display: none;
+    }
+
     header {
         align-content: center;
     }
