@@ -29,7 +29,7 @@ main {
     margin: auto;
 }
 
-#imagem1-header {
+#imagem1Header {
     display: none;
 }
 
@@ -176,7 +176,7 @@ article h1 {
 }
 
 .estrela {
-    animation-name: lua;
+    animation-name: estrela;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -271,6 +271,17 @@ section div {
     }
 }
 
+@keyframes estrela {
+    from {
+        margin-left: 0%;
+        transform: rotate(0deg);
+    }
+    to {
+        margin-left: 91%;
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes capaVoando {
     from {
         opacity: 1;
@@ -300,25 +311,29 @@ section div {
     }
 }
 
-@media only screen and (orientation: landscape){
-    #imagem1-header {
+@media only screen and (max-width: 760px) and (orientation: landscape){
+    #imagem1Header {
         display: block;
     }
+
     .headerImagens {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
+
     .dolar {
         width: 70%;
         margin-bottom: 0;
         margin: auto;
     }
+
     .capa, .silence {
         width: 35%;
         margin-bottom: 0;
         margin: auto;
     }
+
     section div {
         display: flex;
         flex-direction: row;
