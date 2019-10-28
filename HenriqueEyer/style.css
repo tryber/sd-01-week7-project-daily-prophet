@@ -411,8 +411,13 @@ footer img {
     80% {
         transform: scale(2,2) translateY(0px) skew(180deg);
     }
-    100% {
+    99% {
         transform: translate(2000px,-2000px);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0px,0px);
+        opacity: 0;
     }
 }
 
