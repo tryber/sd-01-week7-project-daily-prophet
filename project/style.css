@@ -22,7 +22,7 @@ img {
     animation-duration: 5s;
     width: 100px;
     height: 100px;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     display: none;
 }
@@ -32,7 +32,7 @@ img {
 h1{
     font-size: 8mm;
 }
-h1, p {
+h1, .configuraçao-de-texto {
     width: 100%;
     margin-top: 30px;
     animation-name: texto;
@@ -42,17 +42,37 @@ h1, p {
 
 #primeira-parte {
     display: flex;
-    flex-direction: row; 
+    flex-direction: space-around; 
 }
 #segunda-parte {
     display: flex;
     flex-direction: row; 
 }
 #reação-química {
-    width: 400px;
-    height: 400px;
-    margin-left: 10%;
+    width: 300px;
+    height: 300px;
+    margin-left: 5%;
     display: none;
+}
+p {
+    text-align: justify;
+}
+
+aside {
+    display: none;
+    margin-left: 5%;
+    text-align: center;
+    width: 20%;
+}
+h4 {
+    margin-bottom: 5%;
+}
+#links-para-aprender-quimica {
+    display: flex;
+    flex-direction: column;
+}
+a {
+    margin: 5%;
 }
 #anuncio {
     display: flex;
@@ -95,7 +115,7 @@ footer {
         display: flex;
         justify-content: center;
     }
-    p {
+    .configuraçao-de-texto {
         width: 30%;
     }
     #nimbus {
@@ -110,6 +130,9 @@ footer {
     footer {
          display: flex;
         justify-content: center;
+    }
+    aside {
+        display: initial;
     }
 }
 @media screen and (max-width: 380px) {
