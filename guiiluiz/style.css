@@ -177,6 +177,8 @@ li a:hover {
 .weather-city {
     border-bottom: 3px double #1c1915;
     border-top: 3px double #1c1915;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .raining-gif {
