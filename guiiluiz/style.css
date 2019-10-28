@@ -22,7 +22,7 @@ body {
     font-family: "Mugglenews";
     margin-bottom: 0;
     font-weight: 550;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .text-center {
@@ -133,6 +133,11 @@ li a:hover {
     font-size: 13px;
 }
 
+.article-text h4{
+    margin: 0;
+    margin-top: 2%;
+}
+
 @keyframes article-img {
     50% {
         transform: rotate(40deg);
@@ -149,6 +154,7 @@ li a:hover {
     flex-wrap: wrap;
     padding-bottom: 10px;
     border-bottom: 1px dashed #1c1915;
+    overflow: hidden;
 }
 
 .weather-container {
@@ -157,6 +163,20 @@ li a:hover {
     width: 22%;
     min-width: 50px;
     height: 100px;
+    text-align: center;
+}
+
+.weather-degrees {
+    font-size: 30px;
+    font-family: 'Kreon', serif;
+    font-weight: bolder;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
+.weather-city {
+    border-bottom: 3px double #1c1915;
+    border-top: 3px double #1c1915;
 }
 
 .raining-gif {
@@ -165,9 +185,55 @@ li a:hover {
     height: 125px;
 }
 
+.flying-nimbus {
+    position: absolute;
+    width: 150px;
+    animation: flying-nimbus 7s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    left: 0%;
+    margin-top: 50px;
+}
+
+@keyframes flying-nimbus {
+    0% {
+        left: 0%;
+    }
+    
+    50% {
+        left: 65%;
+    }
+
+    75% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-company-name {
+    font-style: italic;
+}
+
 @media screen and (min-width: 1024px) {
     .newspaper {
         max-width: 1024px;
+    }
+
+    .title-font {
+        font-size: 18px;
     }
 
     .hr-double-top {
@@ -196,8 +262,18 @@ li a:hover {
         height: 125px;
     }
 
+    .weather-degrees {
+        margin-top: 8%;
+    }
+
     .raining-gif {
         height: 170px;
+    }
+
+    @keyframes flying-nimbus {
+        50% {
+            left: 80%;
+        }
     }
 }
 
@@ -214,6 +290,10 @@ li a:hover {
 
     .header-subtitle {
         font-size: 13px;
+    }
+
+    .title-font {
+        font-size: 17px;
     }
 
     .hr-double-top {
@@ -236,6 +316,16 @@ li a:hover {
     .article-text {
         width: 70%;
         font-size: 17px;
+    }
+    
+    .weather-degrees {
+        margin-bottom: 0px;
+        font-size: 34px;
+    }
+
+    .weather-city {
+        margin-top: 3%;
+        font-size: 22px;
     }
 }
 
@@ -273,5 +363,23 @@ li a:hover {
 
     .raining-gif {
         display: none;
+    }
+
+    .flying-nimbus {
+        display: none;
+    }
+
+    .footer-center {
+        font-size: 12px;
+    }
+
+    .weather-city {
+        font-size: 12px;
+        border-bottom: none;
+    }
+    
+    .weather-degrees {
+        font-size: 14px;
+        margin: 0;
     }
 }
