@@ -387,13 +387,12 @@ footer img {
     100% {
       transform: translate(0px, 0px) scale(1,1);
     }
- 
 }
 
-.broom {
+.four:hover .broom {
     animation: broom-fly 10s forwards;
-    animation-delay: 2s;
 }
+
 
 @keyframes broom-fly {
     0% {
@@ -410,10 +409,11 @@ footer img {
     }
     80% {
         transform: scale(2,2) translateY(0px) skew(180deg);
+        opacity: 1;
     }
     99% {
         transform: translate(2000px,-2000px);
-        opacity: 1;
+        opacity: 0;
     }
     100%{
         transform: translate(0px,0px);
