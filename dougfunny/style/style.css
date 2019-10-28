@@ -1,7 +1,7 @@
 * {
     padding: 0;
-    margin: 0;
-    cursor: url("../imagem/vara.png");
+    margin: 0; 
+    cursor: url('../imagem/varinha.png'), auto;
 }
 
 body {
@@ -77,7 +77,7 @@ img {
 }
 
 .primeira-coluna:active {
-    animation: cresce-letra 4s infinite;
+    animation: cresce-letra 4s normal forwards; 
 }
 
 .segunda-coluna {
@@ -86,11 +86,11 @@ img {
 }
 
 .segunda-coluna:active {
-    animation: cresce-letra 4s infinite;
+    animation: cresce-letra 4s normal forwards;
 }
 
 .estrela {
-    animation: estrelinha 4s normal infinite;
+    animation: estrelinha 4s infinite;
     animation-direction: alternate;
     width: 115px;
     position: absolute;
@@ -141,7 +141,7 @@ img {
 }
 
 .fofoca1:active {
-    animation: cresce-letra 4s infinite;
+    animation: cresce-letra 4s normal forwards;
 }
 
 .biografia {
@@ -149,7 +149,7 @@ img {
 }
 
 .biografia:active {
-    animation: cresce-letra 4s infinite;
+    animation: cresce-letra 4s normal forwards;
 }
 
 
@@ -171,7 +171,7 @@ img {
 }
 
 .empregos:active {
-    animation: cresce-letra 4s infinite;
+    animation: cresce-letra 4s normal forwards;
 }
 
 .rodape {
@@ -183,7 +183,7 @@ img {
 }
 
 .rodape:active {
-    animation: cresce-letra 4s infinite;
+    animation: cresce-letra 4s normal forwards;
 }
 
 .ativavasoura {
@@ -216,7 +216,7 @@ img {
 }
 
 .propaganda:active {
-    animation: cresce-letra 4s infinite;
+    animation: cresce-letra 4s normal forwards;
 }
 
 @keyframes vassourinha {
@@ -255,8 +255,12 @@ img {
 }
 
 @keyframes cresce-letra {
-    to {
-        font-size: 1.5em;
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.5);
         font-weight: bold;
     }
 }
