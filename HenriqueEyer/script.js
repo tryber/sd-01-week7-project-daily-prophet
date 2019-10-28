@@ -5,7 +5,8 @@ window.onload = function() {
     for(let element of vetArticles){
         console.log(element);
         element.addEventListener('click', function(){
-            element.style.animation="articles-click 10s";
+            element.style.animation="";
+            setTimeout(() => this.style.animation = 'articles-click 10s', 5);
         })
     }
 }
