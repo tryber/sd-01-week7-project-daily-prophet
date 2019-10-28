@@ -248,6 +248,14 @@ body {
         animation-direction: alternate;
         animation-timing-function: steps(5, end);
     }
+    .footer-style {
+        width: 100%;
+        background-color: #11a36a;
+        justify-content: center;
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
 }
 @media screen and (min-width: 760px) {
     body{
