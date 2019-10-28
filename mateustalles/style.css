@@ -24,11 +24,11 @@ h1 {
     font-size: 4em;
 }
 
-.owl {
+ .owl {
     max-width: 100px;
-    opacity: 0;
-}
-
+    display: none;
+} 
+/* 
 @keyframes moviment {
     0% {
         transform: translate(0px,0px)
@@ -80,8 +80,8 @@ h1 {
 }
 
 .owl.animation-appears:hover {
-    animation-play-state: paused;
-}
+    animation-play-state: paused; */
+/* } */
 
 p {
     margin-top:5px;
@@ -135,6 +135,9 @@ article section h2 {
     justify-content: center;
     align-items: center;
 }
+
+
+
 
 @keyframes broom {
     20% {
@@ -224,4 +227,40 @@ article section h2 {
         opacity: 0.3;
         animation: star-movement 6s infinite ease-in;
     }
+
+
+@keyframes moviment {
+    0% {
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
+    25% {
+
+        transform: translate(240px, 30px);
+    }
+    50% {
+        transform: translate(0px, 140px);
+    }
+    75% {
+        transform: translate(500px, 140px)
+    }
+    100% {
+        opacity: 1;
+
+        transform: translate(500px, 0px)
+    }
+    
+}
+    
+.owl {
+    display: block;
+    opacity: 0;
+    max-width: 100px;
+    animation: moviment 3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 3s 3 alternate forwards;
+}
+
+
+.owl.animation-appears:hover {
+    animation-play-state: paused;
+}
 }
