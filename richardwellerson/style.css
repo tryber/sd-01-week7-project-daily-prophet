@@ -33,6 +33,18 @@ header {
     word-break: normal;
 }
 
+.star {
+    width: 5%;
+    animation: 0.5s infinite;
+    animation-name: star-rotate;
+    position: absolute;
+}
+@keyframes star-rotate {
+    from {
+        transform: rotate(360deg);
+    }
+}
+
 .coat-of-arms {
     width: 10%;
     animation: 3s infinite;
@@ -192,7 +204,7 @@ footer {
     header {
         align-content: center;
     }
-    
+
     .standard-section, .second-standard-section, .third-standard-section {
         max-width: 100%;
     }
