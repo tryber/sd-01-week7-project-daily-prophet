@@ -1,19 +1,29 @@
 body {
     font-family: 'Modern Antiqua', cursive;
     background-image: url(images/colored_vintage_paper_texture_10_light_yellow.jpg);
-    max-width: 80%;
-    overflow-x: hidden;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-grow: 1; */
     margin: 0 auto;
+}
+
+#profeta-logo {
+    max-width: 100%
 }
 
 a {
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
     color: black;
+    text-decoration: none;
 }
 
 nav {
+    text-align: center;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 header {
@@ -43,15 +53,19 @@ p {
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .main section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-section article {
+section article, .banner-section {
     background-image: url(images/colored_vintage_paper_texture_10_light_yellow.jpg);
     display: flex;
     flex-direction: column;
@@ -62,6 +76,10 @@ section article {
     padding: 10px;
     border: 3px solid black;
     border-radius: 15px;
+}
+
+section aside {
+    max-width: 100%;
 }
 
 .video {
@@ -83,33 +101,27 @@ section article h2 {
     max-height: 200px;
 }
 
-.banner-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-}
 
 .banner-section * {
-    margin: 15px 4px;
+    text-align: center;
+    margin: 5px auto;
 }
 
 @keyframes broom {
     20% {
-        transform: scale(1.5), rotate(180deg);
+        transform: scale(1.8), rotate(180deg);
     }
     40% {
-        transform: scale(1.5) translateX(100px) translateY(-100px) ;
+        transform: scale(1.8) translateY(-100px) ;
     }
     60% {
-        transform: scale(1.5) translateX(100px) translateY(-100px) skew(80deg) ;
+        transform: scale(1.8) translateY(-100px) skew(80deg) ;
     }
     85% {
-        transform: scale(1.5) translateX(100px) translateY(-100px) skew(160deg) ;
+        transform: scale(1.8) translateY(-100px) skew(160deg) ;
     }
     100% {
-        transform: scale(1.5)  skew(160deg) translateX(1000px) translateY(-1000px) ;
+        transform: scale(1.8)  skew(160deg) translateX(1000px) translateY(-1000px) ;
     }
 }
 
@@ -148,6 +160,16 @@ section article h2 {
 }
 
 @media screen and (min-width: 760px) {
+
+    body {
+        max-width: 80%;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    #profeta-logo {
+        max-width: 80%
+    }
     
     .main section {
         display: flex;

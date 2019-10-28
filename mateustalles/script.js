@@ -11,6 +11,7 @@ function putBroomStyle() {
 
 function putArticleStyle() {
     if ( this.classList.contains("article-animation") ) {
+        this.classList.remove("article-animation");
         this.classList.add("halt-animation");
     }
     else {
