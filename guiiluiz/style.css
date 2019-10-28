@@ -187,31 +187,46 @@ li a:hover {
     height: 125px;
 }
 
-.flying-nimbus {
+.flying-star {
     position: absolute;
-    width: 150px;
-    animation: flying-nimbus 7s;
+    width: 50px;
+    animation: flying-star 10s;
     animation-delay: 3s;
-    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
     left: 0%;
-    margin-top: 50px;
+    margin-top: -15px;
 }
 
-@keyframes flying-nimbus {
+.flying-star:hover {
+    animation-play-state: paused;
+}
+
+@keyframes flying-star {
     0% {
         left: 0%;
+        transform: rotate(0deg);
     }
     
     50% {
-        left: 65%;
+        left: 90%;
     }
 
-    75% {
-        transform: rotate(180deg);
+    60% {
+        animation-direction: reverse;
+    }
+
+    80% {
+        left: 0%;
+    }
+
+    90% {
+        animation-direction: normal
     }
 
     100% {
-        left: 0%;
+        left: 90%;
+        transform: rotate(360deg);
     }
 }
 
@@ -271,12 +286,6 @@ li a:hover {
     .raining-gif {
         height: 170px;
     }
-
-    @keyframes flying-nimbus {
-        50% {
-            left: 80%;
-        }
-    }
 }
 
 @media screen and (min-width: 761px) {
@@ -329,6 +338,34 @@ li a:hover {
         margin-top: 3%;
         font-size: 22px;
     }
+
+    @keyframes flying-star {
+        0% {
+            left: 0%;
+            transform: rotate(0deg);
+        }
+        
+        50% {
+            left: 93%;
+        }
+    
+        60% {
+            animation-direction: reverse;
+        }
+    
+        80% {
+            left: 0%;
+        }
+    
+        90% {
+            animation-direction: normal
+        }
+    
+        100% {
+            left: 93%;
+            transform: rotate(360deg);
+        }        
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -367,7 +404,7 @@ li a:hover {
         display: none;
     }
 
-    .flying-nimbus {
+    .flying-star {
         display: none;
     }
 
