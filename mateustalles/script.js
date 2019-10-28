@@ -1,9 +1,24 @@
-let owlImage = document.querySelector(".owl");
-window.addEventListener("load", function() {
-    setTimeout(function() {
-      owlImage.className="owl animation-appears";
-    }, 3000);
-});
+let owlImage = document.querySelector("[class*='owl']");
+var animationOwl;
+
+var animarCoruja = function (event) {
+    if ( window.screen.width >= 760 ) {
+        clearTimeout(animationOwl);
+        animationOwl = setTimeout(function() {
+        owlImage.className="owl animation-appears";
+        }, 3000);
+    }
+    else {
+        clearTimeout(animationOwl);
+        owlImage.className="owl halt-animation";
+    }    
+
+
+};
+
+window.addEventListener("load", animarCoruja);
+window.addEventListener("resize", animarCoruja);
+    
 
 let broom = document.querySelector('.broom');
 broom.addEventListener("click", function() {

@@ -16,6 +16,10 @@ header {
     align-items: center;
 }
 
+.halt-animation {
+    animation: none !important;
+}
+
 h1 {
     font-size: 4em;
 }
@@ -168,7 +172,7 @@ article section h2 {
     right:30px;
     z-index: -1;
     opacity: 0.3;
-    animation: star-movement 6s infinite ease-in;
+    /*animation: star-movement 6s infinite ease-in;*/
 }
 
 @keyframes star-movement {
@@ -209,5 +213,15 @@ article section h2 {
 
     .main article:nth-child(3) > section:nth-child(1) {
         flex-basis: 40%;
+    }
+
+    .star {
+        max-width: 360px;
+        position: absolute;
+        top: 450px;
+        right:30px;
+        z-index: -1;
+        opacity: 0.3;
+        animation: star-movement 6s infinite ease-in;
     }
 }
