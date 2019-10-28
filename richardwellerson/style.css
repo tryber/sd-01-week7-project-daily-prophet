@@ -103,7 +103,7 @@ footer {
     width: 10%;
     height: 20%;
     margin-left: 0;
-    animation-name: golden-ball 5s infinite;
+    animation: golden-ball 5s infinite;
     position: absolute;
     transition: 1s;
     animation-delay: 3s;
@@ -154,7 +154,6 @@ footer {
      75%{
         transform: translate(0,-100%);
         opacity: 1;
-        
      }
 
      100%{
