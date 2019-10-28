@@ -6,7 +6,7 @@ window.onload = function() {
         console.log(element);
         element.addEventListener('click', function(){
             element.style.animation="";
-            setTimeout(() => this.style.animation = 'articles-click 10s', 5);
+            setTimeout(() => this.style.animation = 'articles-click 4s', 5);
         })
     }
 }
