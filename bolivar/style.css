@@ -14,7 +14,25 @@
     
     .full-box {
         width: 100%;
-        display: block;
+    }
+    
+    .middle-box {
+        width: 80%;
+        margin: 2% auto;
+    }
+    
+    .news-box {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    .center {
+        justify-content: center;
+        align-items: center;
     }
     /* Especifiq Propriets */
     
@@ -61,6 +79,16 @@
         text-align: center;
         text-transform: uppercase;
     }
+    
+    .news-title {
+        font-size: 80%;
+        background-color: #1c1915;
+        padding: 2px;
+        font-weight: 1000;
+        font-family: "headline_onehplhs", "HelveticaNeue-Bold", "HelveticaNeue", "Roboto", Arial, Verdana, "Trebuchet MS", sans-serif;
+        color: #FFF8EE;
+        margin: 0% 3px;
+    }
     /* Responsive */
     
     @media screen and (max-width: 376px) {
@@ -80,5 +108,13 @@
         #border-bottom {
             position: relative;
             bottom: 28px;
+        }
+        .section-one {
+            width: 100%;
+            height: 60px;
+        }
+        #poison-img,
+        #satan-img {
+            height: 100%;
         }
     }
