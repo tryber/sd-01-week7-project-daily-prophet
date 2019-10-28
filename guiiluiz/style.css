@@ -14,6 +14,12 @@ body {
     justify-content: center;
 }
 
+h6 {
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+}
+
 .hidden {
     display: none;
 }
@@ -244,6 +250,30 @@ li a:hover {
     font-style: italic;
 }
 
+.sale-nimbus {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    border-bottom: 1px dashed #1c1915;
+}
+
+.sale-description {
+    width: 60%;
+    font-size: 13px;
+}
+
+.nimbus2000 {
+    margin: 0 5px;
+    margin-top: 50px;
+    max-width: 220px;
+    width: 40%;
+    height: 20%;
+}
+
+.nimbus2000:active {
+    transform: translateX(50px) scale(2.0, 2.0) rotate(-40deg);
+}
+
 @media screen and (min-width: 1024px) {
     .newspaper {
         max-width: 1024px;
@@ -285,6 +315,10 @@ li a:hover {
 
     .raining-gif {
         height: 170px;
+    }
+
+    .sale-description {
+        font-size: 21px;
     }
 }
 
@@ -366,6 +400,15 @@ li a:hover {
             transform: rotate(360deg);
         }        
     }
+
+    .sale-description {
+        width: 70%;
+        font-size: 17px;
+    }
+    
+    .nimbus2000 {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -420,5 +463,19 @@ li a:hover {
     .weather-degrees {
         font-size: 14px;
         margin: 0;
+    }
+
+    .sale-nimbus {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nimbus2000 {
+        width: 100%;
+    }
+    
+    .sale-description {
+        width: 100%;
+        font-size: 12px;
     }
 }
