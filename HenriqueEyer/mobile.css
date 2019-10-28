@@ -153,13 +153,13 @@ li:hover a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 5rem;
+    font-size: 3.8rem;
     text-transform: uppercase;
     width: 100%;
 }
 
 .title-notice .title-news {
-    font-size: 4.2rem;
+    font-size: 3.1rem;
 }
 
 .extra {
@@ -180,18 +180,18 @@ li:hover a {
 .title-notice img {
     border: 3px black solid;
     min-width: 50%;
-    flex-basis: 4.5rem; 
+    flex-basis: 3.1rem; 
     flex-basis: auto;
 }
 
 p.content {
     padding: 0px 5px 5px 5px;
-    font-size: 2rem;
+    font-size: 1.0rem;
     text-align: justify;
 }
 
 .first-letter {
-    font-size:3rem;
+    font-size:2.2rem;
 }
 
 .shadow-letter {
@@ -200,7 +200,7 @@ p.content {
 
 .score {
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -249,7 +249,7 @@ p.content {
     justify-content: center;
     width: 100%;
     height: 100%;
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     text-align: center;
 }
 
@@ -272,7 +272,7 @@ footer nav ul li {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     width: 100%;
 }
 
