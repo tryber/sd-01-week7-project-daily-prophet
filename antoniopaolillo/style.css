@@ -28,7 +28,7 @@ main {
     margin: auto;
 }
 
-img:first-Child {
+#imagem1-header {
     display: none;
 }
 
@@ -182,6 +182,21 @@ article h1 {
     animation-duration: 5s;
 }
 
+.aumentarTamanhoArtigo {
+    animation-name: tamanhoArtigo;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+.anuncio {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .vassouraAnuncioAdicionar {
     animation-name: vassoura;
@@ -189,12 +204,43 @@ article h1 {
     animation-timing-function: linear;
 }
 
-.aumentarTamanhoArtigo {
-    animation-name: tamanhoArtigo;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
+nav a{
+    text-decoration: none;
+    color: #0B0704;   
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: rgb(151, 131, 104);
+    width: 100%;
+    height: 3em;
+}
+
+@keyframes vassoura {
+    from {
+        transform: scale(1);
+    }
+    20% {  
+        transform: scale(2);
+    }
+    40% {  
+        transform: scale(2) rotate(360deg);
+    }
+    60% {
+        transform: scale(2) translateX(100px) translateY(-100px);
+    }
+    80% {
+        transform: scale(2) translateX(100px) translateY(-100px) skew(160deg);
+    }
+    to {
+        transform: scale(2)  skew(160deg) translateX(1000px) translateY(-1000px);
+    }
 }
 
 @keyframes tamanhoArtigo {
@@ -215,12 +261,6 @@ article h1 {
     }
     to {
         margin-left: 91%;
-    }
-}
-
-@keyframes vassoura {
-    from {
-        transform: scale(2.0, 2.0) rotateX(360deg) translateX(50px) ;
     }
 }
 

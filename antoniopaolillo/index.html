@@ -15,7 +15,7 @@
             <header>
                 <hr class="hrDouble">
                 <section class="headerImagens">
-                    <img src="imagens/img1.png">
+                    <img id="imagem1-header" src="imagens/img1.png">
                     <img src="imagens/img2.svg">
                 </section>
                 <p>*O maior jornal de notícias aleatórias do mundo digital.*</p>
@@ -42,7 +42,7 @@
                 </div>
             </section>
             <img class="lua" src="imagens/lua.png" width="10%">
-            <article>
+            <article id="noticiaPrincipal">
                 <h1>Hora e vez de ganhar dinheiro com a tecnologia</h1>
                 <p class="noticiaPrincipalCabecalho">Se você gosta de tecnologia e não consegue viver sem ela em seu
                     dia a dia, que tal ganhar dinheiro
@@ -99,10 +99,18 @@
                         href="https://www.correiobraziliense.com.br/app/noticia/tecnologia/2019/10/21/interna_tecnologia,799599/empresa-canadense-cria-capa-de-invisibilidade-baseada-em-harry-pot.shtml">Leia
                         a matéria completa aqui!</a></p>
             </article>
-            <img src="imagens/vassoura.jpg" width="40%" height="40%">
-
+            <aside class="anuncio">
+                <img src="imagens/vassoura.png" width="30%" height="30%">
+                <p>Vassoura de Bruxa <br>
+                    A Vassoura de Bruxa é muito divertida<br>
+                    Feito exatamente pra você.<br>
+                    Características do produto<br>
+                    Altura: 99cm<br>
+                    Largura: 6cm<br>
+                    Garantia: 90 dias - defeito de fábrica</p>
+            </aside>
             <article>
-                <h1 class="bonus">Bônus: Matéria da JUSBRASIL expõe a problemática do SILÊNCIO </h1>
+                <h1 class="bonus" id="bonus">Bônus: Matéria da JUSBRASIL expõe a problemática do SILÊNCIO </h1>
                 <p class="noticiaPrincipalCabecalho"> “Lei do Silêncio”: nem todos sabem respeitar o direito alheio.</p>
                 <p class="noticiaPrincipalTexto">Infelizmente nos deparamos muito com a seguinte situação: o vizinho
                     coloca o som muito alto, faz festas constantemente, a empresa ao redor da residência emite barulho
@@ -123,6 +131,13 @@
                         href="https://thiagodp16.jusbrasil.com.br/artigos/773468151/lei-do-silencio-nem-todos-sabem-respeitar-o-direito-alheio?ref=feed">Leia
                         a matéria completa aqui!</a></p>
             </article>
+            <footer>
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#noticiaPrincipal">Matéria principal</a>
+                    <a href="#bonus">Bônus</a>
+                </nav>
+            </footer>
         </section>
     </main>
     <script src="script.js"></script>
