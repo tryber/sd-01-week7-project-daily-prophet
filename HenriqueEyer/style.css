@@ -28,6 +28,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url("./imagens/estrela.png");
+    background-repeat: no-repeat;
+    background-size:50%;
+    animation: background-animation 20s infinite alternate;
 }
 
 header {
@@ -384,4 +388,62 @@ footer img {
       transform: translate(0px, 0px) scale(1,1);
     }
  
+}
+
+.broom {
+    animation: broom-fly 10s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes broom-fly {
+    0% {
+        transform: scale(1,1);
+    }
+    20% {
+        transform: scale(2,2) rotate3d(1, 1, 1, 0deg);
+    }
+    40% {
+        transform: rotate3d(-1, -1, -1, 300deg) scale(2,2) translate(-200px, -200px);
+    }
+    60% {
+        transform:  scale(2,2) translateY(0px) skew(0deg);
+    }
+    80% {
+        transform: scale(2,2) translateY(0px) skew(180deg);
+    }
+    100% {
+        transform: translate(2000px,-2000px);
+    }
+}
+
+@keyframes articles-click {
+    0%{
+        transform: scale(1,1);
+        font-weight: normal;
+    }
+
+    100%{
+        transform: scale(1.5,1.5);
+        font-weight: bold;
+        background: grey;
+    }
+}
+
+@keyframes background-animation {
+    0% {
+        background-position-x: 0vw;
+        background-position-y: 0vh;
+    }
+    30% {
+        background-position-x: 80vw;
+        background-position-y: 75vh;
+    }
+    60% {
+        background-position-x: 0vw;
+        background-position-y: 100vh;
+    }
+    100% {
+        background-position-x: 50vw;
+        background-position-y: 0vh;
+    }
 }
