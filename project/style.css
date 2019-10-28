@@ -112,6 +112,16 @@ footer {
     justify-content: center;
     align-items: center;
 }
+#star {
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+    animation-name: star;
+    display: none;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 
 @media screen and (min-width: 760px) {
@@ -141,6 +151,9 @@ footer {
     aside {
         display: initial;
     }
+    #star {
+        display: initial;
+    }
 }
 @media screen and (max-width: 380px) {
     #segunda-parte {
@@ -162,7 +175,6 @@ footer {
 }
 
 @keyframes vassoura {
-
     0% {
         transform: scale(1.5) rotate(360deg);
     }
@@ -214,5 +226,30 @@ footer {
     100% {
         font-weight: bolder;
         transform: scale(1.5)
+    }
+}
+
+@keyframes star {
+    0% {
+        opacity: 0.5;
+    }
+    20% {
+        transform: translateY(-500px) rotate3d(0, 1, 0, 360deg);
+        opacity: 1;
+    }
+    40% {
+        transform: translateX(500px) rotate3d(1, 0, 0, 360deg);
+        opacity: 0.5;
+    }
+    60% {
+        transform: translateY(-900px) translateX(900px) rotate3d(0, 0, 1, 360deg);
+        opacity: 1;
+    }
+    80% {
+        transform:  rotate3d(0, 1, 0, 360deg);
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
     }
 }
