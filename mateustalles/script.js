@@ -1,31 +1,37 @@
-// let owlImage = document.querySelector("[class*='owl']");
-// var animationOwl;
-
-// var animarCoruja = function (event) {
-//     if ( window.screen.width >= 760 ) {
-//         clearTimeout(animationOwl);
-//         animationOwl = setTimeout(function() {
-//         owlImage.className="owl animation-appears";
-//         }, 3000);
-//     }
-//     else {
-//         clearTimeout(animationOwl);
-//         owlImage.className="owl halt-animation";
-//     }    
-// };
-
-// window.addEventListener("load", animarCoruja);
-// window.addEventListener("resize", animarCoruja);
-    
+window.addEventListener("load", animate);
+window.addEventListener("resize", animate);
 
 let broom = document.querySelector('.broom');
-broom.addEventListener("click", function() {
-    this.style = "animation: broom 5s forwards ease-in;";
-});
+let articles = document.getElementsByTagName("article");
 
-let sections = document.getElementsByTagName("section");
-for (section of sections) {
-   section.addEventListener("click", function() {
-        this.style = "animation: section-effect 6s normal ease;";
-    });
-}
+function putBroomStyle() {
+    this.style = "animation: broom 5s forwards ease-in;";
+    this.classList.remove("halt-animation");
+};
+
+function putArticleStyle() {
+    if ( this.classList.contains("article-animation") ) {
+        this.classList.add("halt-animation");
+    }
+    else {
+        this.classList.remove("halt-animation");
+        this.classList.add("article-animation");
+    }
+};
+
+function animate() {
+    if ( window.innerWidth >= 760 ) {
+            broom.addEventListener("click", putBroomStyle);
+            for (article of articles) {
+                article.addEventListener("click", putArticleStyle);
+        }
+    }
+    else if ( window.innerWidth < 760) {
+        broom.removeEventListener("click", putBroomStyle);
+        broom.className = "broom halt-animation";
+        for (article of articles) {
+            article.removeEventListener("click", putArticleStyle);
+            article.className = "halt-animation";
+        }
+    }    
+};
