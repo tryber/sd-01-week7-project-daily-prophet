@@ -5,10 +5,10 @@
 
 body {
     background-image: url("img/woodbg.jpg");
-    display: flex;
-    justify-content: center;
     cursor: url('img/varinha1.png'),auto;
+    display: flex;
     font-family: 'Vollkorn', serif;
+    justify-content: center;
 }
 
 .header-navbar ul h3 {
@@ -33,14 +33,14 @@ body {
 }
 
 .newspaper {
-    margin: 16px 0px;
-    padding: 16px;
     background: #fff8ee;
-    fill: #1c1915;
     border-radius: 16px;
     box-shadow: none;
-    width: 100%;
+    fill: #1c1915;
+    margin: 16px 0;
+    padding: 16px;
     position: relative;
+    width: 100%;
 }
 
 .header-content {
@@ -59,17 +59,17 @@ body {
 }
 
 .header-title {
-    width: 100%;
     bottom: 15px;
     position: relative;
+    width: 100%;
 }
 
 .header-subtitle {
     font-family: 'Kreon', serif;
-    letter-spacing: 4px;
-    width: 100%;
     font-size: 12px;
     font-weight: 600;
+    letter-spacing: 4px;
+    width: 100%;
 }
 
 .hr-double-top {
@@ -91,23 +91,23 @@ body {
 }
 
 ul {
-    list-style-type: none;
-    margin: 5px 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #fff8ee;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 5px 0;
+    overflow: hidden;
+    padding: 0;
 }
 
 li a {
     color: #1c1915;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
     font-size: 15px;
     font-family: "Mugglenews";
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
 }
 
 li a:hover {
@@ -115,25 +115,25 @@ li a:hover {
 }
 
 .article-with-image {
+    border-bottom: 1px dashed #1c1915;
     display: flex;
     justify-content: center;
     flex-flow: row nowrap;
-    border-bottom: 1px dashed #1c1915;
 }
 
 .article-img {
-    max-width: 230px;
-    width: 40%;
-    height: 40%;
     animation-name: article-img;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    height: 40%;
+    max-width: 230px;
+    width: 40%;    
 }
 
 .article-text {
+    font-size: 13px;
     margin-top: 3%;
     width: 60%;
-    font-size: 13px;
 }
 
 .article-text h4{
@@ -152,21 +152,21 @@ li a:hover {
 }
 
 .weather-section {
+    border-bottom: 1px dashed #1c1915;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #1c1915;
     overflow: hidden;
+    padding-bottom: 10px;
 }
 
 .weather-container {
-    margin: 2% 1px;
     border: 3px double #1c1915;
-    width: 22%;
-    min-width: 50px;
     height: 100px;
     text-align: center;
+    margin: 2% 1px;
+    min-width: 50px;
+    width: 22%;
 }
 
 .weather-degrees {
@@ -186,19 +186,19 @@ li a:hover {
 
 .raining-gif {
     position: absolute;
-    width: 97%;
     height: 125px;
+    width: 97%;
 }
 
 .flying-star {
-    position: absolute;
-    width: 50px;
     animation: flying-star 10s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
     left: 0%;
     margin-top: -15px;
+    position: absolute;
+    width: 50px;
 }
 
 .flying-star:hover {
@@ -234,9 +234,9 @@ li a:hover {
 }
 
 .footer {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .footer-center {
@@ -248,23 +248,23 @@ li a:hover {
 }
 
 .sale-nimbus {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row nowrap;
     border-bottom: 1px dashed #1c1915;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 .sale-description {
-    width: 60%;
     font-size: 13px;
+    width: 60%;
 }
 
 .nimbus2000 {
     margin: 0 5px;
     margin-top: 50px;
     max-width: 220px;
-    width: 40%;
     height: 20%;
+    width: 40%;
 }
 
 .nimbus2000:active {
@@ -321,13 +321,13 @@ li a:hover {
 
 @media screen and (min-width: 761px) {
     .logo-shield {
-        width: 15%;
         display: block;
+        width: 15%;
     }
 
     .header-title {
-        width: 84%;
         bottom: 27px;
+        width: 84%;
     }
 
     .header-subtitle {
@@ -399,8 +399,8 @@ li a:hover {
     }
 
     .sale-description {
-        width: 70%;
         font-size: 17px;
+        width: 70%;
     }
     
     .nimbus2000 {
@@ -427,8 +427,8 @@ li a:hover {
     }
     
     .article-text {
-        width: 100%;
         font-size: 12px;
+        width: 100%;
     }
 
     .title-font {
@@ -453,8 +453,8 @@ li a:hover {
     }
 
     .weather-city {
-        font-size: 12px;
         border-bottom: none;
+        font-size: 12px;
     }
     
     .weather-degrees {
@@ -463,8 +463,8 @@ li a:hover {
     }
 
     .sale-nimbus {
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .nimbus2000 {
@@ -472,7 +472,7 @@ li a:hover {
     }
     
     .sale-description {
-        width: 100%;
         font-size: 12px;
+        width: 100%;
     }
 }
