@@ -38,6 +38,7 @@ header {
     animation: star-rotate 0.5s infinite;
     position: absolute;
 }
+
 @keyframes star-rotate {
     from {
         transform: rotate(360deg);
@@ -58,16 +59,16 @@ header {
     position: relative;
 }
 
-.iframe-container{
+.iframe-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%;
     height: 0;
 }
 
-.iframe-container iframe{
+.iframe-container iframe {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -120,7 +121,7 @@ footer {
     animation-delay: 3s;
 }
 
-#golden-ball:hover{
+#golden-ball:hover {
     animation: none;
 }
 
@@ -128,17 +129,14 @@ footer {
     0% {
         margin-left: 0;
     }
-    
     35% {
         margin-left: 30%;
         transform: skew(-30deg) translate(0, -30%);
     }
-
     70% {
         transform: skew(100deg);
         transform: translate(-20%, 109%);
     }
-
     100% {
         margin-left: 0;
     }
@@ -153,36 +151,31 @@ footer {
 }
 
 @keyframes nimbus {
-     25% {
-         transform: rotate(-45deg);
-     }
-
-     50%{
+    25% {
+        transform: rotate(-45deg);
+    }
+    50% {
         transform: scale(2.0);
         transform: rotate(-20deg);
-     }
-
-     75%{
-        transform: translate(0,-100%);
+    }
+    75% {
+        transform: translate(0, -100%);
         opacity: 1;
-     }
-
-     100%{
+    }
+    100% {
         transform: skew(100deg) translate(-800%, -800%);
         opacity: 0;
-     }
+    }
 }
 
 @keyframes shake-coat-of-arms {
     20% {
         transform: rotate(55deg);
-        transform: translate(0, -100%) skew(20deg, 25deg);  
+        transform: translate(0, -100%) skew(20deg, 25deg);
     }
-
     50% {
         transform: rotate(33deg);
     }
-
     80% {
         transform: rotate(-17deg);
     }
@@ -195,15 +188,12 @@ footer {
     .coat-of-arms {
         display: none;
     }
-
-    #golden-ball{
+    #golden-ball {
         display: none;
     }
-
     header {
         align-content: center;
     }
-
     .standard-section, .second-standard-section, .third-standard-section {
         max-width: 100%;
     }
