@@ -115,14 +115,14 @@ footer {
     width: 10%;
     height: 20%;
     margin-left: 0;
-    animation: golden-ball 5s infinite;
+    animation: golden-ball 5s 3 alternate;
     position: absolute;
     transition: 1s;
     animation-delay: 3s;
 }
 
 #golden-ball:hover {
-    animation: none;
+    animation-play-state: paused;
 }
 
 @keyframes golden-ball {
