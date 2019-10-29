@@ -114,7 +114,7 @@ li a {
 }
 
 li a:hover {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 .article-with-image {
