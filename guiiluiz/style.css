@@ -14,7 +14,7 @@ body {
     justify-content: center;
 }
 
-h6 {
+.header-navbar ul h3 {
     font-weight: 400;
     margin: 0;
     text-transform: uppercase;
