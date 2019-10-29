@@ -35,8 +35,7 @@ header {
 
 .star {
     width: 5%;
-    animation: 0.5s infinite;
-    animation-name: star-rotate;
+    animation: star-rotate 0.5s infinite;
     position: absolute;
 }
 @keyframes star-rotate {
