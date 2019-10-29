@@ -1,17 +1,14 @@
 @font-face {
     font-family: "Mugglenews";
-    src: url(fonts/mugglenews.ttf);
-}
-
-* {
-    cursor: url('img/varinha1.png'),auto;
-    font-family: 'Vollkorn', serif;
+    src: url('fonts/mugglenews.ttf');
 }
 
 body {
     background-image: url("img/woodbg.jpg");
     display: flex;
     justify-content: center;
+    cursor: url('img/varinha1.png'),auto;
+    font-family: 'Vollkorn', serif;
 }
 
 .header-navbar ul h3 {
@@ -25,8 +22,8 @@ body {
 }
 
 .title-font {
-    font-family: "Mugglenews";
     margin-bottom: 0;
+    font-family: "Mugglenews";
     font-weight: 550;
     font-size: 14px;
 }
