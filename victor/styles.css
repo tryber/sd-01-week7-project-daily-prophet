@@ -3,6 +3,51 @@
     padding: 0;
 }
 
+#harry-potter-animation {
+    animation: hpanimation 10s infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+    position: absolute;
+    animation-delay: 3s;
+    width: 300px;
+    transition-duration: 4s;
+    animation-play-state: running;
+}
+
+#harry-potter-animation:hover {
+    animation-play-state: paused;
+}
+
+@keyframes hpanimation {
+    20% {
+        transform: rotate(180deg);
+        transform: translate(100px, 100px) rotate(30deg);
+        transition-duration: 4s;
+    }
+    
+    40% {
+        transform: rotate(180deg);
+        transform: translate(1000px, 150px) rotate(36deg);
+        transition-duration: 4s;
+    }
+    
+    60% {
+        transform: rotate(180deg);
+        transform: translate(300px, 900px) rotate(180deg);
+        transition-duration: 4s;
+    }
+
+    80% {
+        transform: translate(200px, 600px) rotate(40deg);
+        transition-duration: 4s;
+    }
+
+    100% {
+        transform: translate(50%, 50%) rotate(360deg);
+        transition-duration: 4s;
+    }
+}
+
 body {
     background-image: url(img/bg-image.jpg);
     -webkit-background-size: cover;
@@ -25,9 +70,9 @@ body {
 }
 
 #main-title {
-    text-align: center;
     font-size: 50px;
     font-family: 'Kaushan Script', cursive;
+    text-align: center;
 }
 
 #main-info img{
@@ -35,10 +80,10 @@ body {
 }
 
 #main-info {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -49,15 +94,15 @@ body {
 }
 
 #first-article img {
-    width: 200px;
     margin: 20px;
+    width: 200px;
 }
 
 #first-article {
-    padding: 10px;
+    align-items: center;
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
+    padding: 10px;
 }
 
 #first-article-title {
@@ -95,16 +140,15 @@ body {
 #magic-bloom-flying {
     animation: magicBloom 5s infinite;
     animation-direction: alternate;
-    transform: rotate(20deg);
+    transform: rotate(5deg);
+    transition-duration: 3s;
 }
 
-@keyframes magicBloom {
-    form {
-        transform: translate(30px, 10px);
-    }
-    to {
-        transform: translate(30px, 10px);
-    }
+#magic-bloom-flying:active {
+    transition-duration: 3s;
+    width: 500px;
+    transform: translateX(10px) scale(2.0, 2.0);
+    transform: rotate(360deg);
 }
 
 aside a {
@@ -138,17 +182,4 @@ footer {
     color: white;
     margin-top: 30px;
     text-align: center;
-}
-
-#harry-potter-animatin {
-    margin: -60px 0px -20px -200px;
-    width: 150px;
-    animation: hp 4s infinite;
-    animation-delay: 3s;
-    animation-timing-function: ease-in;
-}
-@keyframes hp {
-    to {
-        margin-left: 98%;
-    }
 }
