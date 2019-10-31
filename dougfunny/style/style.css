@@ -351,14 +351,14 @@ img {
 
 @keyframes vassourinha {
     0% {
-        left: 0px;
-        top: 0px;
+        left: 0;
+        top: 0;
         opacity: 1;
     }
 
     25% {
         left: 608px;
-        top: 0px;
+        top: 0;
         transform: rotate(360deg) translate(-90%, -80%);
         opacity: 1;
     }
@@ -377,8 +377,8 @@ img {
     }
 
     100% {
-        left: 0px;
-        top: 0px;
+        left: 0;
+        top: 0;
         transform: rotatey(180deg) skewy(200deg);
         opacity: 0;
     }
