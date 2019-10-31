@@ -195,7 +195,7 @@ li a:hover {
     animation-delay: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
-    left: 0%;
+    left: 0;
     margin-top: -15px;
     position: absolute;
     width: 50px;
@@ -207,7 +207,7 @@ li a:hover {
 
 @keyframes flying-star {
     0% {
-        left: 0%;
+        left: 0;
         transform: rotate(0deg);
     }
     
@@ -220,7 +220,7 @@ li a:hover {
     }
 
     80% {
-        left: 0%;
+        left: 0;
     }
 
     90% {
@@ -366,7 +366,7 @@ li a:hover {
     }
     
     .weather-degrees {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         font-size: 34px;
     }
 
@@ -377,7 +377,7 @@ li a:hover {
 
     @keyframes flying-star {
         0% {
-            left: 0%;
+            left: 0;
             transform: rotate(0deg);
         }
         
@@ -390,7 +390,7 @@ li a:hover {
         }
     
         80% {
-            left: 0%;
+            left: 0;
         }
     
         90% {
@@ -494,7 +494,7 @@ li a:hover {
 
 @media screen and (min-width: 650px) and (orientation: landscape) {
     .hr-double-top {
-        top: 0px;
+        top: 0;
     }
 
     .header-subtitle {
