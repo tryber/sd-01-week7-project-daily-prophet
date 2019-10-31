@@ -12,32 +12,14 @@ body {
 }
 
 
-/* Standard Propriets */
-
-.full-box {
-    width: 100%;
-}
-
-.news-box {
-    width: 50%;
-    height: 100%;
-    margin: 2%;
-}
-
-.news-box-1 {
-    width: 70%;
-    height: 100%;
-    margin: 2%;
-}
-
-.news-box-2 {
-    width: 30%;
-    height: 100%;
-    margin: 2%;
-}
+/*Default */
 
 .flex {
     display: flex;
+}
+
+.column {
+    flex-direction: column;
 }
 
 .center {
@@ -45,34 +27,63 @@ body {
     align-items: center;
 }
 
+.around {
+    justify-content: space-around;
+    align-items: center;
+}
 
-/* Especifiq Propriets */
+.between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box100 {
+    width: 100%;
+    height: 100%;
+}
+
+.box90 {
+    width: 90%;
+    height: 100%;
+}
+
+.box80 {
+    width: 80%;
+    height: 100%;
+}
+
+
+/*Specific */
+
+header {
+    width: 100%;
+    height: 150px;
+}
 
 header>h1 {
     display: none;
 }
 
-#border-top,
-#border-bottom {
-    width: 90%;
-    height: 5px;
-}
-
-#border-top {
-    margin: 3% auto;
+#header-div-layer-1 {
+    height: 80%;
     border-top: 2px solid #1c1915;
-    border-bottom: 0.5px solid #1c1915;
-}
-
-#border-bottom {
-    margin: 1% auto;
-    border-top: 0.5px solid #1c1915;
     border-bottom: 2px solid #1c1915;
 }
 
-header>img {
-    display: block;
-    margin: 0% auto;
+#header-div-layer-2 {
+    height: 95%;
+    border-top: 0.5px solid #1c1915;
+    border-bottom: 0.5px solid #1c1915;
+}
+
+.main-title-symbol {
+    height: 80%;
+}
+
+#main-title-img {
+    height: 90%;
+    position: relative;
+    bottom: 15%;
 }
 
 figcaption::after {
@@ -86,366 +97,112 @@ figcaption::before {
 }
 
 figcaption {
-    position: relative;
     font-weight: bold;
     text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Kreon', serif;
     text-transform: uppercase;
+    position: relative;
+    bottom: 5%;
 }
 
-.news-title {
-    font-size: 70%;
-    background-color: #1c1915;
-    padding: 2px;
+article:nth-of-type(1) {
+    height: 100px;
+}
+
+#article1-title {
+    height: 80%;
+    width: 20%;
+    margin: 0% 1% 0% 5%;
+    text-transform: uppercase;
+    font-family: "HelveticaNeue-Bold", "HelveticaNeue", "Roboto", Arial, Verdana, "Trebuchet MS", sans-serif;
     font-weight: 1000;
-    font-family: "headline_onehplhs", "HelveticaNeue-Bold", "HelveticaNeue", "Roboto", Arial, Verdana, "Trebuchet MS", sans-serif;
+    background-color: #1C1915;
     color: #FFF8EE;
-    margin: 0% 3px;
-    border-radius: 5px;
+    letter-spacing: 0.5px;
 }
 
-#poison-img,
-#satan-img,
-#hogwarts-img,
-#bolsonaro-img,
-#black-img {
-    height: 100%;
-}
-
-#bolsonaro-img {
-    border-radius: 20px;
-}
-
-#nimbus-img {
-    height: 30%;
-}
-
-#moon-img {
-    display: none;
+.star-img {
     position: absolute;
-    height: 50px;
-    animation-name: moon;
-    animation-delay: 3s;
-    animation-duration: 20s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 3;
 }
 
-#star-img {
-    display: none;
-    position: absolute;
-    height: 50px;
-    animation-name: star;
-    animation-delay: 3s;
-    animation-duration: 10s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
+.star-img:nth-child(1) {
+    left: 40%;
+    top: 5%
+}
+
+.star-img:nth-child(2) {
+    left: 40%;
+    top: 53%;
+}
+
+.star-img:nth-child(3) {
+    right: 40%;
+    bottom: 53%
+}
+
+.star-img:nth-child(4) {
+    right: 40%;
+    bottom: 7%
+}
+
+.wicca-text {
+    font-family: 'Vollkorn', serif;
+    text-align: justify;
+    color: #1c1915;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0% 1%;
+}
+
+.wicca-text:nth-last-of-type(1) {
+    margin: 0% 6% 0% 1%;
 }
 
 
-/* Responsive */
+/*Responsive */
 
-@media screen and (max-width: 800px) {
-    header {
-        height: 200px;
-    }
-    header>img {
-        height: 80%;
-        width: 80%;
-        position: relative;
-        bottom: 70px;
-    }
-    #border-bottom {
-        position: relative;
-        bottom: 90px;
-    }
-    figcaption {
-        font-size: 100%;
-        bottom: 90px;
-    }
-    .section-one {
-        width: 100%;
-        height: 60px;
-    }
-    .section-two {
-        width: 90%;
-        height: 400px;
-        margin: 10% 0% 5% 5%;
-        background-image: url("hogwarts.jpg");
-        background-size: cover;
-        border-radius: 20px;
-    }
-    .position-text {
-        position: relative;
-        bottom: 45%;
-        font-size: 200%;
-    }
-    .ad {
-        width: 80%;
-        text-align: center;
-        margin: 2% auto;
-    }
-    .ad-box {
-        height: 60px;
-    }
-    #nimbus-img {
-        height: 50%;
-        margin: 2% 35%;
-    }
-    #facebook-img,
-    #insta-img,
-    #linkdin-img {
-        height: 50%;
-    }
-    #moon-img {
-        display: block;
-    }
-    #star-img {
-        display: block;
-        position: absolute;
-    }
-    @keyframes moon {
-        0% {
-            top: 0px;
-        }
-        2% {
-            top: 50px;
-        }
-        10% {
-            left: 100px;
-        }
-        12% {
-            left: 600px;
-        }
-        15% {
-            left: 650px;
-        }
-        20% {
-            top: 0px;
-        }
-        30% {
-            top: 100px;
-        }
-        31% {
-            top: 1050px
-        }
-        50% {
-            left: 500px;
-        }
-        70% {
-            left: 0px;
-        }
-    }
-    @keyframes article-title {
-        0% {
-            font-size: 80%;
-            font-weight: 1000;
-        }
-        20% {
-            font-size: 100%;
-            font-weight: 1500;
-        }
-        20% {
-            font-size: 150%;
-            font-weight: 2000;
-        }
-        30% {
-            font-size: 200%;
-            font-weight: 2000;
-        }
-        100% {
-            font-size: 70%;
-            font-weight: 1000;
-        }
-    }
-    @keyframes star {
-        0% {
-            left: 10px;
-        }
-        40% {
-            transform: rotate3d(-1, -1, -1, 150deg);
-            left: 100px;
-        }
-        80% {
-            transform: rotate3d(-4, -4, -2, 200deg);
-            left: 600px;
-        }
-        100% {
-            left: 700px;
-        }
+@media screen and (max-width: 900px) {
+    .main-title-symbol {
+        display: none;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 760px) {
     header {
         height: 100px;
     }
-    #border-bottom {
-        bottom: 40px;
-    }
-    figcaption {
-        font-size: 60%;
-        bottom: 40px;
-    }
-    .section-one {
-        width: 100%;
-        height: 60px;
-    }
-    .section-two {
-        width: 90%;
-        height: 180px;
-        margin: 10% 0% 5% 5%;
-        background-image: url("hogwarts.jpg");
-        background-size: cover;
-        border-radius: 20px;
-    }
-    .position-text {
-        position: relative;
-        bottom: 60%;
-        font-size: 100%;
-    }
-    .ad {
-        width: 80%;
-        text-align: center;
-        margin: 2% auto;
-    }
-    .ad-box {
-        height: 60px;
-    }
-    #nimbus-img {
-        height: 50%;
-        margin: 2% 35%;
-    }
-    #facebook-img,
-    #insta-img,
-    #linkdin-img {
-        height: 50%;
-    }
-    #moon-img {
-        display: none;
-    }
-    #star-img {
-        display: none;
+    article:nth-of-type(1) {
+        height: 70px;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     header {
         height: 80px;
     }
-    header>img {
-        height: 80%;
-        width: 80%;
-        position: relative;
-        bottom: 30px;
+    article:nth-of-type(1) {
+        height: 50px;
     }
-    #border-bottom {
-        bottom: 30px;
-    }
-    figcaption {
-        font-size: 60%;
-        bottom: 30px;
-    }
-    .position-text {
-        bottom: 40%;
-        font-size: 80%;
-    }
-    .section-two {
-        margin: 3% 0% 5% 5%;
+    .wicca-img:nth-of-type(1) {
+        display: none;
     }
 }
 
-@media screen and (max-width: 350px) {
-    .section-one {
-        margin-top: 0%;
+@media screen and (max-width: 360px) {
+    header {
+        height: 60px;
     }
-    .section-two {
-        margin: 6% 0% 5% 5%;
-    }
-    .ad-section {
-        width: 80%;
-        height: 100px;
-    }
-    .position-text {
-        bottom: 40%;
-        font-size: 80%;
-    }
-    figcaption {
-        bottom: 35px;
-    }
-    #border-bottom {
-        position: relative;
-        bottom: 35px;
+    article:nth-of-type(1) {
+        height: 40px;
     }
 }
 
-@keyframes flying {
-    0% {
-        height: 30%;
-        left: 0px;
-        transform: rotate(0deg);
+@media screen and (max-width: 280px) {
+    header {
+        height: 50px;
     }
-    10% {
-        height: 35%;
-        left: 20px;
-        transform: rotate(-10deg);
-    }
-    20% {
-        height: 38%;
-        left: 150px;
-        bottom: 0px;
-        transform: rotate(-15deg);
-    }
-    30% {
-        height: 38%;
-        left: 160px;
-        bottom: 300px;
-        transform: rotate(-20deg), rotateY(100deg);
-        height: 50%;
-    }
-    40% {
-        transform: rotateY(200deg);
-        bottom: 300px;
-        left: 100px;
-        height: 60%;
-    }
-    50% {
-        transform: rotate(-10deg);
-        transform: rotateY(200deg);
-        bottom: 300px;
-        left: 0px;
-        height: 40%;
-    }
-    60% {
-        transform: rotate(0deg);
-        transform: rotateY(360deg);
-        bottom: 150px;
-        left: -150px;
-        height: 40%;
-    }
-    70% {
-        bottom: 50px;
-        left: -50px;
-        height: 40%;
-    }
-    80% {
-        bottom: 0px;
-        left: 0px;
-    }
-    90% {
-        bottom: 0px;
-        left: 1000px;
-        transform: skew(50deg);
-    }
-    91% {
-        transform: skew(100deg);
-    }
-    92% {
-        bottom: -0px;
-        left: -50px;
-    }
-    100% {
-        bottom: 0px;
-        left: 0px;
+    article:nth-of-type(1) {
+        height: 30px;
     }
 }
