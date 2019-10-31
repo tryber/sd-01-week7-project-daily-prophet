@@ -177,6 +177,9 @@ section:nth-of-type(1)>h1 {
     letter-spacing: 1px;
     color: #1c1915;
     margin: 5% 1%;
+    animation: textSize 4s linear 0s 1;
+    animation-play-state: paused;
+    transition: font-weight 4s, font-size 4s;
 }
 
 .bold {
@@ -211,6 +214,28 @@ section:nth-of-type(1)>h1 {
 
 #div-title {
     align-items: center;
+}
+
+#moon-img {
+    position: absolute;
+    animation: moon-animation 10s ease-in 3s 3;
+    animation-direction: normal, reverse, normal;
+    transition: transform 3s;
+    top: 100%;
+    left: 80%;
+}
+
+#moon-img:hover {
+    animation-play-state: paused;
+}
+
+.news-text:hover {
+    animation-play-state: running;
+}
+
+#nimbus-img {
+    animation: nimbus-speed 10s linear 0s infinite;
+    animation-play-state: paused;
 }
 
 
@@ -249,6 +274,73 @@ section:nth-of-type(1)>h1 {
     }
 }
 
+@keyframes moon-animation {
+    0% {
+        transform: rotate(10deg) translate(0px);
+    }
+    20% {
+        transform: rotate(120deg) translate(100px);
+    }
+    40% {
+        transform: rotate(360deg) translate(200px);
+    }
+    60% {
+        transform: rotate(120deg) translate(100px);
+    }
+    80% {
+        transform: rotate(60deg) translate(50px);
+    }
+    100% {
+        transform: rotate(0deg) translate(0px);
+    }
+}
+
+@keyframes textSize {
+    100% {
+        font-weight: 900;
+        font-size: 150%;
+    }
+}
+
+@keyframes nimbus-speed {
+    0% {
+        transform: translate(0px, 0px) rotateY(0deg);
+    }
+    10% {
+        transform: translate(400px, -400px) rotateY(0deg);
+    }
+    20% {
+        transform: translate(500px, -500px) rotateY(180deg);
+    }
+    30% {
+        transform: translate(200px, -800px) rotateY(180deg);
+    }
+    40% {
+        transform: translate(0px, -1000px) rotateY(180deg);
+    }
+    50% {
+        transform: translate(-500px, -500px) rotateY(180deg);
+    }
+    60% {
+        transform: translate(-600px, -400px) rotateY(0deg);
+    }
+    70% {
+        transform: translate(0px, 0px) rotateY(0deg);
+    }
+    80% {
+        transform: skew(50deg);
+    }
+    90% {
+        transform: translateX(10000px);
+    }
+    91% {
+        transform: translateX(-10000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
 
 /*Responsive */
 
@@ -265,7 +357,8 @@ section:nth-of-type(1)>h1 {
     article:nth-of-type(1) {
         height: 70px;
     }
-    #tree-img {
+    #tree-img,
+    #moon-img {
         display: none;
     }
 }
@@ -282,6 +375,9 @@ section:nth-of-type(1)>h1 {
     }
     .star-img {
         display: none;
+    }
+    .news-text:hover {
+        animation-play-state: paused;
     }
 }
 
@@ -302,3 +398,5 @@ section:nth-of-type(1)>h1 {
         height: 30px;
     }
 }
+
+;

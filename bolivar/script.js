@@ -13,6 +13,8 @@ window.onload = function() {
     changeHeight(searchByQuerySelector("#facebook-img"), searchByQuerySelector("#aside-section"), 0.05);
     changeHeight(searchByQuerySelector("#insta-img"), searchByQuerySelector("#aside-section"), 0.05);
     changeHeight(searchByQuerySelector("#linkdin-img"), searchByQuerySelector("#aside-section"), 0.05);
+    changeHeight(searchByQuerySelector("#moon-img"), searchByQuerySelector("#aside-section"), 0.05);
+    addEvent();
 }
 
 window.onresize = function() {
@@ -30,6 +32,7 @@ window.onresize = function() {
     changeHeight(searchByQuerySelector("#facebook-img"), searchByQuerySelector("#aside-section"), 0.05);
     changeHeight(searchByQuerySelector("#insta-img"), searchByQuerySelector("#aside-section"), 0.05);
     changeHeight(searchByQuerySelector("#linkdin-img"), searchByQuerySelector("#aside-section"), 0.05);
+    changeHeight(searchByQuerySelector("#moon-img"), searchByQuerySelector("#aside-section"), 0.05);
 }
 
 
@@ -48,4 +51,12 @@ function changeHeight(element_identifier, section_identifier, relative_size) {
     for (i = 0; i < element_identifier.length; i++) {
         element_identifier[i].style.height = `${section_identifier[0].clientWidth*relative_size}px`;
     }
+}
+
+function addEvent() {
+    searchByQuerySelector("#nimbus-img")[0].addEventListener("click", flyNimbus)
+}
+
+function flyNimbus() {
+    searchByQuerySelector("#nimbus-img")[0].style.animationPlayState = "running";
 }
