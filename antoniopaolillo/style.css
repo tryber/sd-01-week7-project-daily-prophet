@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     cursor: url("imagens/pointer.png"), auto;
@@ -17,7 +17,7 @@ main {
     border-radius: 20px;
 }
 
-.jornal{
+.jornal {
     padding-top: 10px;
     padding-right: 25px;
     padding-left: 25px;
@@ -51,7 +51,7 @@ header p {
     margin: 0.5em auto;
 }
 
-.novidadeCabecalho{
+.novidadeCabecalho {
     margin-top: 0.5em;
     background-color: #0B0704;
     color: #FFF8EE;
@@ -106,7 +106,7 @@ article h1 {
     margin: 0.15em;
 }
 
-.noticiaPrincipalTexto{
+.noticiaPrincipalTexto {
     font-size: 1.0em;
     margin: 0.6em;
     text-align: center;
@@ -119,14 +119,10 @@ article h1 {
 }
 
 .dolar:hover {
-    animation-name: dolarRodando;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 2;
+    animation: dolarRodando 5s 2 alternate steps(360);
 }
 
-
-.linkVideoCapaInvisibilidade{
+.linkVideoCapaInvisibilidade {
     cursor: pointer;
 }
 
@@ -135,14 +131,9 @@ article h1 {
     margin-bottom: 1.5em;
 }
 
-.capa:hover{
-    animation-duration: 3s;
-    animation-name: capaVoando;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+.capa:hover {
+    animation: capaVoando 3s 2 alternate steps(360);
 }
-
 
 .bonus {
     background-color: #0B0704;
@@ -152,23 +143,13 @@ article h1 {
 }
 
 .silence:hover {
-    animation-direction: alternate;
-    animation-duration: 3s;
-    animation-iteration-count: 2;
-    animation-name: silence;
-    animation-timing-function: linear;
+    animation: silence 3s steps(360);
 }
 
 
 .lua {
     width: 10%;
-    animation-name: lua;
-    animation-timing-function: ease-in;
-    animation-delay: 3s;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation: lua ease-in 5s 3 alternate 3s forwards;
 }
 
 .lua:hover {
@@ -176,19 +157,12 @@ article h1 {
 }
 
 .estrela {
-    animation-name: estrela;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 5s;
+    animation: estrela 5s infinite alternate steps(360);
 }
 
 .aumentarTamanhoArtigo {
-    animation-name: tamanhoArtigo;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
+    animation: tamanhoArtigo 4s alternate 2;
+    transition-timing-function: ease;
 }
 
 .anuncio {
@@ -200,12 +174,10 @@ article h1 {
 }
 
 .vassouraAnuncioAdicionar {
-    animation-name: vassoura;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+    animation: vassoura 10s steps(360) ;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #0B0704;   
     font-size: 1.5em;
@@ -327,65 +299,65 @@ section div {
         margin-right: 1em;
         margin-bottom: 1em;
     }
-}
+    
+    @keyframes tamanhoArtigo {
+        from {
+            transform: scale(1, 1);
+            font-weight: 100;
+        }
+        
+        to {
+            transform: scale(1.5, 1.5);
+            font-weight: 900;
+        }
+    }
 
-@keyframes tamanhoArtigo {
-    from {
-        transform: scale(1, 1);
-        font-weight: normal;
+    @keyframes lua {
+        from {
+            margin-left: 0%;
+        }
+        to {
+            margin-left: 91%;
+        }
     }
     
-    to {
-        transform: scale(1.5, 1.5);
-        font-weight: bold;
-    }
-}
-
-@keyframes lua {
-    from {
-        margin-left: 0%;
-    }
-    to {
-        margin-left: 91%;
-    }
-}
-
-@keyframes estrela {
-    from {
-        margin-left: 0%;
-        transform: rotate(0deg);
-    }
-    to {
-        margin-left: 91%;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes capaVoando {
-    from {
-        opacity: 1;
+    @keyframes estrela {
+        from {
+            margin-left: 0%;
+            transform: rotate(0deg);
+        }
+        to {
+            margin-left: 91%;
+            transform: rotate(360deg);
+        }
     }
     
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes dolarRodando {
-    from {
-        transform: rotate(0deg);
+    @keyframes capaVoando {
+        from {
+            opacity: 1;
+        }
+        
+        to {
+            opacity: 0;
+        }
     }
     
-    to {
-        transform: rotate(360deg);
+    @keyframes dolarRodando {
+        from {
+            transform: rotate(0deg);
+        }
+        
+        to {
+            transform: rotate(360deg);
+        }
     }
-}
-
-@keyframes silence {
-    0% {
-        transform: skew(0deg);
-    }
-    100% {
-        transform: skew(180deg);
+    
+    @keyframes silence {
+        0% {
+            transform: skew(0deg);
+        }
+        100% {
+            transform: skew(180deg);
+        }
     }
 }

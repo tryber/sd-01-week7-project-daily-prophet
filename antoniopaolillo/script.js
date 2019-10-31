@@ -1,4 +1,4 @@
-function aumentandoTamanhoDosArtigos() {
+function aumentaTamanhoDosArtigos() {
     let artigos = document.getElementsByTagName("article");
 
     for (let i = 0; i < artigos.length; i++) {
@@ -11,7 +11,7 @@ function aumentandoTamanhoDosArtigos() {
         })
     }
 }
-aumentandoTamanhoDosArtigos();
+aumentaTamanhoDosArtigos();
 
 function ativarAnuncio() {
     let vassoura = document.getElementById("vassouraAnuncio");
