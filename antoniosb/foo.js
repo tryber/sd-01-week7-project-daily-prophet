@@ -2,16 +2,17 @@ function (user, context, callback) {
 
   // Roles should only be set to verified users.
   if (!user.email || !user.email_verified) {
-    return callback(null, user, context);
+    return callback(null, user, context)
   }
 
-  user.app_metadata = user.app_metadata || {};
+  user.app_metadata = user.app_metadata || {}
   // You can add a Role based on what you want
   // In this case I check domain
   const addRolesToUser = function (user) {
     if (user.identities.filter((identity) => identity.connection === 'betrybe-com').length > 0) {
       return ['all'];
-    } else {
+    }
+    else {
       var options = {
         method: 'POST',
         url: `https://${auth0.domain}/oauth/token`,
