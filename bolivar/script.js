@@ -10,6 +10,9 @@ window.onload = function() {
     changeHeight(searchByQuerySelector(".star-img"), searchByQuerySelector("#section-one"), 0.03);
     changeHeight(searchByQuerySelector(".wicca-img"), searchByQuerySelector("#section-one"), 0.08);
     changeHeight(searchByQuerySelector("#nimbus-img"), searchByQuerySelector("#aside-section"), 0.08);
+    changeHeight(searchByQuerySelector("#facebook-img"), searchByQuerySelector("#aside-section"), 0.05);
+    changeHeight(searchByQuerySelector("#insta-img"), searchByQuerySelector("#aside-section"), 0.05);
+    changeHeight(searchByQuerySelector("#linkdin-img"), searchByQuerySelector("#aside-section"), 0.05);
 }
 
 window.onresize = function() {
@@ -24,6 +27,9 @@ window.onresize = function() {
     changeHeight(searchByQuerySelector(".star-img"), searchByQuerySelector("#section-one"), 0.03);
     changeHeight(searchByQuerySelector(".wicca-img"), searchByQuerySelector("#section-one"), 0.08);
     changeHeight(searchByQuerySelector("#nimbus-img"), searchByQuerySelector("#aside-section"), 0.08);
+    changeHeight(searchByQuerySelector("#facebook-img"), searchByQuerySelector("#aside-section"), 0.05);
+    changeHeight(searchByQuerySelector("#insta-img"), searchByQuerySelector("#aside-section"), 0.05);
+    changeHeight(searchByQuerySelector("#linkdin-img"), searchByQuerySelector("#aside-section"), 0.05);
 }
 
 
