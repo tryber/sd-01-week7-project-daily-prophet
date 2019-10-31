@@ -90,6 +90,7 @@ h2 {
 
 a {
     margin: 5%;
+    cursor: pointer;
 }
 
 #anuncio {
@@ -140,6 +141,39 @@ footer {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+@keyframes vassoura {
+    0% {
+        transform: scale(1) rotate(360deg);
+    }
+    30% {
+        transform: scale(1.5) translateX(50px);
+    }
+    45% {
+        transform: scale(1.5) translateY(-60px) rotate(-30deg);;
+    }
+    60% {
+        transform: translateY(60px) rotate(45deg) rotate3d(1, 0, 0, 180deg);
+    }
+    75% {
+        transform: rotate3d(1, 0, 0, 360deg) skew(-30deg);
+    }
+    90% {
+        opacity: 1;
+    }
+    95%  {
+        margin-left: 5%;
+    }
+    99% {
+        margin-left: 40%;
+        transform: skew(-60deg);
+        opacity: 1;
+    }
+    100% {
+        margin-left: 100%;
+        opacity: 0;
+    }
 }
 
 @media screen and (min-width: 760px) {
@@ -214,7 +248,7 @@ footer {
             opacity: 1;
         }
         100% {
-            margin-left: 100%;
+            margin-left: 80%;
             opacity: 0;
         }
     }
@@ -264,37 +298,5 @@ footer {
     }
     h1 {
         margin-right: 5%;
-    }
-}
-@keyframes vassoura {
-    0% {
-        transform: scale(1) rotate(360deg);
-    }
-    30% {
-        transform: scale(1.5) translateX(50px);
-    }
-    45% {
-        transform: scale(1.5) translateY(-60px) rotate(-30deg);;
-    }
-    60% {
-        transform: translateY(60px) rotate(45deg) rotate3d(1, 0, 0, 180deg);
-    }
-    75% {
-        transform: rotate3d(1, 0, 0, 360deg) skew(-30deg);
-    }
-    90% {
-        opacity: 1;
-    }
-    95%  {
-        margin-left: 5%;
-    }
-    99% {
-        margin-left: 40%;
-        transform: skew(-60deg);
-        opacity: 1;
-    }
-    100% {
-        margin-left: 100%;
-        opacity: 0;
     }
 }
