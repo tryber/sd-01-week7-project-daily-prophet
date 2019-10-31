@@ -119,7 +119,7 @@ footer {
     color: white;
 }
 
-#golden-ball {
+.golden-ball {
     width: 10%;
     height: 20%;
     margin-left: 0;
@@ -129,7 +129,7 @@ footer {
     animation-delay: 3s;
 }
 
-#golden-ball:hover {
+.golden-ball:hover {
     animation-play-state: paused;
 }
 
@@ -209,7 +209,7 @@ footer {
         display: none;
     }
 
-    #golden-ball {
+    .golden-ball {
         display: none;
         transition: none;
     }
@@ -232,7 +232,7 @@ footer {
         display: none;
     }
 
-    #golden-ball {
+    .golden-ball {
         display: none;
         transition: none;
     }
