@@ -1,0 +1,396 @@
+* {
+    padding: 0;
+    margin: 0;
+    cursor: url("../imagem/varinha.png"), auto;
+}
+
+body {
+    border: #1c1915 1px solid;
+    background-color: #fff8ee;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: "Vollkorn", serif;
+    color: #1c1915;
+    max-width: 1050px;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.logotipo {
+    margin-top: 3%;
+}
+
+.logo-profeta {
+    margin-top: 3%;
+    animation-name: descerLogo;
+    width: 115px;
+    position: absolute;
+    padding: 0 0.5em;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0, -0.57, 0, 1.66);
+    animation-fill-mode: both;
+    transition: transform 500ms linear;
+}
+
+@keyframes descerLogo {
+    20% {
+        transform: translate(0, -120%) rotate(45deg);
+        visibility: visible;
+    }
+
+    50% {
+        transform: translate(-40%, -80%) rotate(33deg);
+    }
+
+    80% {
+        transform: translate(20%, -40%) rotate(-17deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+.primeira-chamada {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.sensacional {
+    font-size: 3em;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 1px;
+    margin: auto;
+}
+
+.primeira-coluna {
+    font-size: 1em;
+    padding: 15px;
+}
+
+.primeira-coluna:active {
+    animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
+}
+
+.segunda-coluna {
+    font-size: 0.8em;
+    padding: 15px;
+}
+
+.segunda-coluna:active {
+    animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
+}
+
+.estrela {
+    animation-name: estrelinha;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    transition: transform 500ms ease-in;
+    width: 115px;
+    position: absolute;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.estrela:hover {
+    animation-name: estrelinha;
+    animation-play-state: paused;
+}
+
+@keyframes estrelinha {
+    20% {
+        transform: rotate(180deg);
+        margin-left: 28px;
+    }
+
+    50% {
+        transform: translate(-40%, -80%) rotate(90deg);
+        margin-top: 51%;
+    }
+
+    80% {
+        transform: translate(20%, -40%) rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+        margin-left: 900px;
+    }
+}
+
+.fofoca-do-veio {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.imagem-veio {
+    width: 23em;
+    height: 17em;
+}
+
+.fofoca1 {
+    padding: 15px;
+    font-size: 0.8em;
+}
+
+.fofoca1:active {
+    animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
+}
+
+.biografia {
+    padding: 15px;
+}
+
+.biografia:active {
+    animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
+}
+
+.emprego {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    text-decoration-line: underline;
+}
+
+.empregos {
+    padding: 15px;
+    border: 1px solid black;
+    font-size: 2em;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.empregos:active {
+    animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
+}
+
+.rodape {
+    font-size: 0.5em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 15px;
+}
+
+.rodape:active {
+    animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
+}
+
+.ativavasoura {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: black 1px solid;
+    transition: transform 500ms linear;
+}
+
+.vassoura {
+    width: 20em;
+    padding: 15px;
+    position: relative;
+}
+
+@media only screen and (max-width: 759px) and (orientation: landscape) {
+    * {
+        padding: 0;
+        margin: 0;
+        cursor: url("../imagem/varinha.png"), auto;
+    }
+
+    body {
+        background-color: #fff8ee;
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+        font-family: "Vollkorn", serif;
+        color: #1c1915;
+        max-width: 1050px;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .logotipo {
+        margin-top: 3%;
+    }
+
+    .logo-profeta {
+        display: none;
+    }
+
+    .primeira-chamada {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        padding: 15px;
+    }
+
+    .sensacional {
+        font-size: 3em;
+        height: 100%;
+        background-color: black;
+        color: white;
+        padding: 1px;
+        margin: auto;
+    }
+
+    .primeira-coluna {
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    .segunda-coluna {
+        font-size: 0.8em;
+        padding: 15px;
+    }
+
+    .estrela {
+        display: none;
+    }
+
+    .fofoca-do-veio {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        padding: 15px;
+    }
+
+    .imagem-veio {
+        width: 23em;
+        height: 17em;
+    }
+
+    .fofoca1 {
+        padding: 15px;
+        font-size: 0.8em;
+    }
+
+    .biografia {
+        padding: 15px;
+    }
+
+    .emprego {
+        display: flex;
+        justify-content: center;
+        font-size: 3em;
+        text-decoration-line: underline;
+    }
+
+    .empregos {
+        padding: 15px;
+        border: 1px solid black;
+        font-size: 2em;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    .rodape {
+        font-size: 0.5em;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .ativavasoura {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        border: black 1px solid;
+    }
+
+    .vassoura {
+        width: 20em;
+        padding: 15px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .vassoura {
+        display: none;
+    }
+
+    #clicar {
+        display: none;
+    }
+}
+
+.propaganda {
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.propaganda:active {
+    animation: cresce-letra 4s normal forwards;
+}
+
+@keyframes vassourinha {
+    0% {
+        left: 0;
+        top: 0;
+        opacity: 1;
+    }
+
+    25% {
+        left: 608px;
+        top: 0;
+        transform: rotate(360deg) translate(-90%, -80%);
+        opacity: 1;
+    }
+
+    50% {
+        left: 608px;
+        top: 150px;
+        opacity: 1;
+    }
+
+    75% {
+        left: 0px;
+        top: 150px;
+        transform: rotate3d(360deg);
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+        transform: rotatey(180deg) skewy(200deg);
+        opacity: 0;
+    }
+}
+
+@keyframes cresce-letra {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+        font-weight: bold;
+    }
+}
