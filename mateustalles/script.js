@@ -1,7 +1,7 @@
 window.addEventListener("load", animate);
 window.addEventListener("resize", animate);
 
-let broom = document.querySelector('.broom');
+let broom = document.querySelector(".broom");
 let articles = document.getElementsByTagName("article");
 
 function putBroomStyle() {
@@ -9,7 +9,7 @@ function putBroomStyle() {
     this.classList.remove("halt-animation");
 };
 
-function putArticleStyle() {
+function toggleArticleStyle() {
     if ( this.classList.contains("article-animation") ) {
         this.classList.remove("article-animation");
         this.classList.add("halt-animation");
