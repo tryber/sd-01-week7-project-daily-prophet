@@ -290,7 +290,7 @@ li a:hover {
 
     li a {
         font-size: 18px;
-    }
+    }    
 
     .article-img {
         width: 30%;
@@ -299,7 +299,12 @@ li a:hover {
     
     .article-text {
         width: 70%;
-        font-size: 21px;
+        transition: all 4s;
+    }
+
+    .article-text:active {
+        font-weight: bold;
+        font-size: 25.5px;
     }
 
     .weather-container {
