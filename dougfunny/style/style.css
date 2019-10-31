@@ -1,7 +1,7 @@
 * {
     padding: 0;
-    margin: 0; 
-    cursor: url('../imagem/varinha.png'), auto;
+    margin: 0;
+    cursor: url("../imagem/varinha.png"), auto;
 }
 
 body {
@@ -34,6 +34,7 @@ img {
     animation-duration: 3s;
     animation-timing-function: cubic-bezier(0, -0.57, 0, 1.66);
     animation-fill-mode: both;
+    transition: transform 500ms linear;
 }
 
 @keyframes descerLogo {
@@ -77,7 +78,8 @@ img {
 }
 
 .primeira-coluna:active {
-    animation: cresce-letra 4s normal forwards; 
+    animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
 }
 
 .segunda-coluna {
@@ -87,14 +89,19 @@ img {
 
 .segunda-coluna:active {
     animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
 }
 
 .estrela {
-    animation: estrelinha 4s infinite;
+    animation-name: estrelinha;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
     animation-direction: alternate;
+    transition: transform 500ms ease-in;
     width: 115px;
     position: absolute;
     animation-delay: 3s;
+    animation-fill-mode: forwards;
 }
 
 .estrela:hover {
@@ -142,6 +149,7 @@ img {
 
 .fofoca1:active {
     animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
 }
 
 .biografia {
@@ -150,8 +158,8 @@ img {
 
 .biografia:active {
     animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
 }
-
 
 .emprego {
     display: flex;
@@ -172,6 +180,7 @@ img {
 
 .empregos:active {
     animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
 }
 
 .rodape {
@@ -184,6 +193,7 @@ img {
 
 .rodape:active {
     animation: cresce-letra 4s normal forwards;
+    transition: transform 500ms linear;
 }
 
 .ativavasoura {
@@ -191,13 +201,133 @@ img {
     justify-content: space-between;
     padding: 15px;
     border: black 1px solid;
+    transition: transform 500ms linear;
 }
 
 .vassoura {
     width: 20em;
     padding: 15px;
     position: relative;
+}
 
+@media only screen and (max-width: 759px) and (orientation: landscape) {
+    * {
+        padding: 0;
+        margin: 0;
+        cursor: url("../imagem/varinha.png"), auto;
+    }
+
+    body {
+        background-color: #fff8ee;
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+        font-family: "Vollkorn", serif;
+        color: #1c1915;
+        max-width: 1050px;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .logotipo {
+        margin-top: 3%;
+    }
+
+    .logo-profeta {
+        display: none;
+    }
+
+    .primeira-chamada {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        padding: 15px;
+    }
+
+    .sensacional {
+        font-size: 3em;
+        height: 100%;
+        background-color: black;
+        color: white;
+        padding: 1px;
+        margin: auto;
+    }
+
+    .primeira-coluna {
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    .segunda-coluna {
+        font-size: 0.8em;
+        padding: 15px;
+    }
+
+    .estrela {
+        display: none;
+    }
+
+    .fofoca-do-veio {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        padding: 15px;
+    }
+
+    .imagem-veio {
+        width: 23em;
+        height: 17em;
+    }
+
+    .fofoca1 {
+        padding: 15px;
+        font-size: 0.8em;
+    }
+
+    .biografia {
+        padding: 15px;
+    }
+
+    .emprego {
+        display: flex;
+        justify-content: center;
+        font-size: 3em;
+        text-decoration-line: underline;
+    }
+
+    .empregos {
+        padding: 15px;
+        border: 1px solid black;
+        font-size: 2em;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    .rodape {
+        font-size: 0.5em;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .ativavasoura {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        border: black 1px solid;
+    }
+
+    .vassoura {
+        width: 20em;
+        padding: 15px;
+        position: relative;
+    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -256,7 +386,7 @@ img {
 
 @keyframes cresce-letra {
     0% {
-        transform: scale(1.0);
+        transform: scale(1);
     }
 
     100% {
