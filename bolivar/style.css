@@ -116,7 +116,7 @@ article:nth-of-type(1) {
     margin: 0% 1% 0% 5%;
     text-transform: uppercase;
     font-family: "HelveticaNeue-Bold", "HelveticaNeue", "Roboto", Arial, Verdana, "Trebuchet MS", sans-serif;
-    font-weight: 1000;
+    font-weight: 900;
     background-color: #1C1915;
     color: #FFF8EE;
     letter-spacing: 0.5px;
@@ -157,6 +157,24 @@ article:nth-of-type(1) {
 
 .wicca-text:nth-last-of-type(1) {
     margin: 0% 6% 0% 1%;
+}
+
+section:nth-of-type(1)>h1 {
+    display: none;
+}
+
+.news-title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 900;
+    color: #1c1915;
+    font-family: "headline_onehplhs", "HelveticaNeue-Bold", "HelveticaNeue", "Roboto", Arial, Verdana, "Trebuchet MS", sans-serif;
+}
+
+.news-title:nth-of-type(5),
+.news-title:nth-of-type(6) {
+    background-color: #1c1915;
+    color: #FFF8EE;
 }
 
 
