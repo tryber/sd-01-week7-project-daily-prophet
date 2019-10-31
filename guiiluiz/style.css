@@ -73,17 +73,17 @@ body {
 }
 
 .hr-double-top {
+    height: 2px;
 	border-top: 3px solid #1c1915;
     border-bottom: 1px solid #1c1915;
-    height: 2px;
     position: relative;
     top: 3px;
 }
 
 .hr-double-bottom {
+    height: 2px;
 	border-top: 1px solid #1c1915;
     border-bottom: 3px solid #1c1915;
-    height: 2px;
 }
 
 .header-navbar {
