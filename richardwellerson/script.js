@@ -16,8 +16,9 @@ function pausedNimbus () {
 
 function growParagraph () {
     for(let i = 0; i < paragraphToGrow.length; i++) {
-        console.log(paragraphToGrow.length)
-        console.log(paragraphToGrow[i])
+        paragraphToGrow[i].addEventListener('click', function(){
+            paragraphToGrow[i].style.animationPlayState = "running";
+        })
     }
 }
 

@@ -94,7 +94,7 @@ article {
 
 .grow-paragraph {
     animation: grow 4s ease;
-    animation-play-state: running;
+    animation-play-state: paused;
 }
 
 @keyframes grow {
