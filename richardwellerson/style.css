@@ -42,47 +42,47 @@ header {
 }
 
 .coat-of-arms {
-    width: 10%;
     animation: 3s infinite;
     animation-name: shake-coat-of-arms;
+    width: 10%;
     word-break: normal;
 }
 
 .header-image {
     box-sizing: border-box;
     max-width: 100%;
-    word-break: normal;
     position: relative;
+    word-break: normal;
 }
 
 .iframe-container {
+    height: 0;
+    padding-bottom: 56.25%;
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
 }
 
 .iframe-container iframe {
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
 }
 
 .standard-section {
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
 }
 
 .second-standard-section {
-    max-width: 50%;
     height: auto;
+    max-width: 50%;
 }
 
 .third-standard-section {
-    max-width: 63%;
     height: auto;
+    max-width: 63%;
 }
 
 article {
@@ -96,37 +96,37 @@ article {
 
 @keyframes grow {
     to {
-        transform: scale(1.5);
         font-weight: bold;
+        transform: scale(1.5);
     }
 }
 
 .align-items {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     max-height: 100%;
+    width: 100%;
 }
 
 footer {
+    align-items: center;
     background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 1%;
-    color: white;
 }
 
 .golden-ball {
-    width: 10%;
+    animation: golden-ball 5s 3 alternate;
+    animation-delay: 3s;
     height: 20%;
     margin-left: 0;
-    animation: golden-ball 5s 3 alternate;
     position: absolute;
     transition: 1s;
-    animation-delay: 3s;
+    width: 10%;
 }
 
 .golden-ball:hover {
@@ -154,38 +154,39 @@ footer {
 }
 
 .nimbus {
-    width: 10%;
-    height: 10%;
-    animation-fill-mode: forwards;
-    transition: 1s;
-    animation-delay: 3s;
     animation: nimbus 5s infinite;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
     animation-play-state: paused;
+    height: 10%;
     transition: all 1s;
+    width: 10%;
 }
 
 @keyframes nimbus {
+
     25% {
         transform: rotate(-45deg);
     }
 
     50% {
-        transform: scale(2.0);
         transform: rotate(-20deg);
+        transform: scale(2.0);
     }
 
     75% {
-        transform: translate(0, -100%);
         opacity: 1;
+        transform: translate(0, -150%);
     }
-
+    
     100% {
-        transform: skew(100deg) translate(-800%, -800%);
         opacity: 0;
+        transform: skew(100deg) translate(-800%, -800%);
     }
 }
 
 @keyframes shake-coat-of-arms {
+    
     20% {
         transform: rotate(55deg);
         transform: translate(0, -100%) skew(20deg, 25deg);
@@ -205,6 +206,7 @@ footer {
 }
 
 @media screen and (max-width: 760px) {
+
     .coat-of-arms {
         display: none;
     }
@@ -228,6 +230,7 @@ footer {
 }
 
 @media screen and (max-height: 350px){
+
     .coat-of-arms {
         display: none;
     }
