@@ -147,6 +147,8 @@ footer {
     animation-fill-mode: forwards;
     transition: 1s;
     animation-delay: 3s;
+    animation: nimbus 5s infinite;
+    animation-play-state: paused;
 }
 
 @keyframes nimbus {
