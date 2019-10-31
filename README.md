@@ -11,12 +11,14 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 ### ANTES DE COMEÇAR A DESENVOLVER:
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-01-week7-project-daily-prophet.git`.
+
+* `git clone https://github.com/tryber/sd-01-week7-project-daily-prophet.git`.
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-01-week7-project-daily-prophet`
 
 2. Crie uma branch a partir da branch `master`
-  * Verifique que você está na branch `master`
+
+* Verifique que você está na branch `master`
     * Exemplo: `git branch`
   * Se não estiver, mude para a branch `master`
     * Exemplo: `git checkout master`
@@ -58,7 +60,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ---
 
-### DURANTE O DESENVOLVIMENTO
+### DURANTE O DESENVOLVIMENTO!!!!
 
 * ⚠ **LEMBRE-SE DE CRIAR TODOS OS ARQUIVOS DENTRO DA PASTA COM O SEU NOME** ⚠
 
