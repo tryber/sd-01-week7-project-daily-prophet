@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -38,6 +36,7 @@ section {
     background-size:50%;
     animation: background-animation 20s steps(15) infinite alternate;
 }
+
 @media (min-width: 1170px) {
     .container {
         max-width: 1170px;
@@ -104,6 +103,7 @@ section {
     background: black;
     color: #fff8ee;
 }
+
 .nav-page ul {
     width: 100%;
     list-style: none;
@@ -458,5 +458,4 @@ strong {
             background-position-y: 0vh;
         }
     }
-    
 }
