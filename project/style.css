@@ -1,0 +1,302 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    cursor: url('Group\ \(1\).png'), auto;
+}
+#informações-e-referencias-sobre-quimica {
+    display: flex;
+}
+#informações-sobre-quimica {
+    margin: 5%;
+    text-align: justify;
+    border: solid 1px black;
+    padding-bottom: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+#coruja {
+    animation-name: coruja-voando;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    width: 100px;
+    height: 100px;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    display: none;
+}
+
+#coruja:hover {
+    animation-play-state: paused;
+}
+
+h1 {
+    font-size: 8mm;
+} 
+
+h1, .configuraçao-de-texto {
+    width: 100%;
+    margin-top: 30px;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#indroduçao-ao-conteudo {
+    display: flex;
+    flex-direction: space-around; 
+}
+
+#desenvolvimento-do-conteudo {
+    margin-right: 10%;
+}
+
+#reação-química {
+    width: 300px;
+    height: 300px;
+    display: none;
+    margin-top: 30px;
+}
+
+p {
+    text-align: justify;
+}
+
+aside {
+    display: none;
+    margin-top: 200px;
+    margin-right: 5%;
+    text-align: center;
+    width: 20%;
+    height: 20%;
+    border: solid 1px black;
+    padding: 2%;
+}
+
+h2 {
+    margin-bottom: 5%;
+}
+
+#links-para-aprender-quimica {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    margin: 5%;
+    cursor: pointer;
+}
+
+#anuncio {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+.nimbus {
+    animation-duration: 15s;
+    transition: 1s;
+    animation-name: vassoura;
+    animation-fill-mode: forwards;
+}
+
+#nimbus {
+    width: 20%;
+    height: 20%;
+    margin-left: 5%;
+}
+
+nav {
+    display: flex;
+    margin-left: 5%;
+}
+#compre-sua-nimbus {
+    margin-bottom: 15px;
+    font-size: 7mm;
+    font-weight: bolder;
+}
+footer {
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#star {
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+    animation-name: star;
+    display: none;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes vassoura {
+    0% {
+        transform: scale(1) rotate(360deg);
+    }
+    30% {
+        transform: scale(1.5) translateX(50px);
+    }
+    45% {
+        transform: scale(1.5) translateY(-60px) rotate(-30deg);;
+    }
+    60% {
+        transform: translateY(60px) rotate(45deg) rotate3d(1, 0, 0, 180deg);
+    }
+    75% {
+        transform: rotate3d(1, 0, 0, 360deg) skew(-30deg);
+    }
+    90% {
+        opacity: 1;
+    }
+    95%  {
+        margin-left: 5%;
+    }
+    99% {
+        margin-left: 40%;
+        transform: skew(-60deg);
+        opacity: 1;
+    }
+    100% {
+        margin-left: 100%;
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    img {
+        width: 760px;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    .configuraçao-de-texto {
+        width: 30%;
+    }
+    #nimbus {
+        display: initial;
+    }
+    #coruja {
+        display: initial;
+    }
+    #reação-química {
+        display: initial;
+    }
+    #desenvolvimento-do-conteudo {
+        display: flex;
+        flex-direction: row; 
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+    aside {
+        display: initial;
+    }
+    #star {
+        display: initial;
+    }
+    
+    @keyframes coruja-voando {
+        from {
+            margin-left: 0%;
+        }
+        to {
+            margin-left: 90%;
+        }
+    }
+    
+    @keyframes vassoura {
+        0% {
+            transform: scale(1) rotate(360deg);
+        }
+        30% {
+            transform: scale(1.5) translateX(50px);
+        }
+        45% {
+            transform: scale(1.5) translateY(-60px) rotate(-30deg);;
+        }
+        60% {
+            transform: translateY(60px) rotate(45deg) rotate3d(1, 0, 0, 180deg);
+        }
+        75% {
+            transform: rotate3d(1, 0, 0, 360deg) skew(-30deg);
+        }
+        90% {
+            opacity: 1;
+        }
+        95%  {
+            margin-left: 5%;
+        }
+        99% {
+            margin-left: 40%;
+            transform: skew(-60deg);
+            opacity: 1;
+        }
+        100% {
+            margin-left: 80%;
+            opacity: 0;
+        }
+    }
+    
+    @keyframes article {
+        100% {
+            font-weight: bolder;
+            transform: scale(1.5)
+        }
+    }
+    
+    @keyframes star {
+        0% {
+            opacity: 0.5;
+        }
+        20% {
+            transform: translateY(-500px) rotate3d(0, 1, 0, 360deg);
+            opacity: 1;
+        }
+        40% {
+            transform: translateX(500px) rotate3d(1, 0, 0, 360deg);
+            opacity: 0.5;
+        }
+        60% {
+            transform: translateY(-900px) translateX(900px) rotate3d(0, 0, 1, 360deg);
+            opacity: 1;
+        }
+        80% {
+            transform:  rotate3d(0, 1, 0, 360deg);
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    #segunda-parte {
+        display: flex;
+        flex-direction: column; 
+    } 
+    #anuncio {
+        display: none;
+    }
+    #nimbus {
+        display: none;
+    }
+    h1 {
+        margin-right: 5%;
+    }
+}
