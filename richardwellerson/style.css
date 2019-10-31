@@ -1,18 +1,18 @@
 body {
+    background: #dddddd;
     cursor: url("images/cursor.png"), auto;
     margin: 0 auto;
-    background: #dddddd;
-    word-break: normal;
     text-align: justify;
+    word-break: normal;
 }
 
 nav {
+    background-color: black;
+    border: 2px solid whitesmoke;
+    color: #dddddd;
     display: flex;
     justify-content: space-around;
-    background-color: black;
-    color: #dddddd;
     padding: 1%;
-    border: 2px solid whitesmoke;
 }
 
 a {
@@ -20,19 +20,19 @@ a {
 }
 
 header {
-    padding: 5%;
-    width: 100%;
+    align-items: center;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 5%;
     word-break: normal;
+    width: 100%;
 }
 
 .star {
-    width: 5%;
     animation: star-rotate 0.5s infinite;
     position: absolute;
+    width: 5%;
 }
 
 @keyframes star-rotate {
