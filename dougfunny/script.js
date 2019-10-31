@@ -8,10 +8,9 @@ function larguraDaTela() {
     let largura = window.outerWidth
     let cabecalho = document.getElementById("cabecalho")
     let vassoura = document.querySelector(".vassoura")
-    if (largura < 760) {
+    if (largura <= 760) {
         cabecalho.src = "imagem/dailymobile.png"
     } else {
         cabecalho.src = "imagem/profetadiario.png"
     }
-
 }
