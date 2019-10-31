@@ -12,25 +12,6 @@ Descobrir como fazer uma animação repetir a cada click (só consegui para o pr
 Fazer um bloco grande com dimensões width 100% e altura responsiva, dentro deste bloco, colocar outros blocos de altura e width em % (responsivo, vai poupar ter que ficar alterando um por um no @media);
 
 
- <h1>Wizard world and muggle's nature devastations</h1>
-            <div class="flex center box80">Wizard</div>
-            <div class="flex center column box80" id="article-text">
-                <div class="flex center box100">
-                    <img src="tree.png" width="100px">
-                    <p>The recent fires that devastated the Amazon, burning over 20,000 hectares of forest, caused global outrage. Many were quick to blame Brazil's president, Jair Bolsonaro, who since taking office has made it clear that protecting the
-                        environment is not really a priority of his government. <br> Indeed, his policies and anti-preservation speech have played a major role. Earlier this year, the government cut the budget of various agencies responsible for fire
-                        prevention, including the environmental inspection agency IBAMA, the fire prevention system PrevFogo, and the Chico Mendes Institute for Biodiversity Conservation (ICMBio), which inevitably affected the country's ability to cope
-                        with the fires. <br> In addition, Bolsonaro has taken measures that encourage deforestation and promote agribusiness and mining, at the expense of the rights of indigenous people and sustainability. His fiery rhetoric also incited
-                        farmers to start fires to show their support for the president in the face of international criticism.</p>
-                </div>
-                <img src="florest.jpg" width="100px">
-            </div>
-            <div class="flex center">world</div>
-            <div class="flex center">and muggle's</div>
-            <div class="flex center">devastations</div>
-            
-                
-
 
 
 
