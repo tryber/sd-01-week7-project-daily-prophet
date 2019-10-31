@@ -184,11 +184,6 @@ section:nth-of-type(1)>h1 {
     width: 100%;
 }
 
-.bold {
-    background-color: #1c1915;
-    color: #FFF8EE;
-}
-
 #nature {
     margin: 5% 0% 0% 0%;
 }
@@ -201,8 +196,29 @@ section:nth-of-type(1)>h1 {
     margin: 5% 1%;
 }
 
+.bold {
+    background-color: #1c1915;
+    color: #FFF8EE;
+}
+
+.aside-title {
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #FFF8EE;
+    background-color: #1c1915;
+    padding: 2px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin: 1% 1%;
+}
+
 #section-div-layer-1 {
     margin: 0% 0% 3% 0%;
+}
+
+#aside-section {
+    margin: 3% 0%;
 }
 
 #tree-img {
