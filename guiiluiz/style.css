@@ -414,7 +414,7 @@ li a:hover {
     }
 
     .header-subtitle {
-        font-size: 11px;
+        font-size: 9px;
         letter-spacing: 2px;
     }
 
@@ -474,5 +474,25 @@ li a:hover {
     .sale-description {
         font-size: 12px;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 450px) and (orientation: landscape) {
+    .hr-double-top {
+        top: -3px;
+    }
+
+    .header-subtitle {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 650px) and (orientation: landscape) {
+    .hr-double-top {
+        top: 0px;
+    }
+
+    .header-subtitle {
+        font-size: 12px;
     }
 }
