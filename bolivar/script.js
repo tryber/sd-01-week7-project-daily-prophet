@@ -6,7 +6,6 @@ window.onload = function() {
     changeWordSize(searchByQuerySelector(".news-text"), searchByQuerySelector("#section-two"), 0.013);
     changeWordSize(searchByQuerySelector(".aside-title"), searchByQuerySelector("#aside-section"), 0.02);
     changeHeight(searchByQuerySelector("#florest-img"), searchByQuerySelector("#section-two"), 0.15);
-    changeHeight(searchByQuerySelector("#tree-img"), searchByQuerySelector("#section-two"), 0.1);
     changeHeight(searchByQuerySelector(".star-img"), searchByQuerySelector("#section-one"), 0.03);
     changeHeight(searchByQuerySelector(".wicca-img"), searchByQuerySelector("#section-one"), 0.08);
     changeHeight(searchByQuerySelector("#nimbus-img"), searchByQuerySelector("#aside-section"), 0.08);
@@ -25,7 +24,6 @@ window.onresize = function() {
     changeWordSize(searchByQuerySelector(".news-text"), searchByQuerySelector("#section-two"), 0.013);
     changeWordSize(searchByQuerySelector(".aside-title"), searchByQuerySelector("#aside-section"), 0.02);
     changeHeight(searchByQuerySelector("#florest-img"), searchByQuerySelector("#section-two"), 0.15);
-    changeHeight(searchByQuerySelector("#tree-img"), searchByQuerySelector("#section-two"), 0.1);
     changeHeight(searchByQuerySelector(".star-img"), searchByQuerySelector("#section-one"), 0.03);
     changeHeight(searchByQuerySelector(".wicca-img"), searchByQuerySelector("#section-one"), 0.08);
     changeHeight(searchByQuerySelector("#nimbus-img"), searchByQuerySelector("#aside-section"), 0.08);
