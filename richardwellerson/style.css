@@ -92,6 +92,18 @@ article {
     padding: 5%;
 }
 
+.grow-paragraph {
+    animation: grow 4s ease;
+    animation-play-state: running;
+}
+
+@keyframes grow {
+    to {
+        transform: scale(1.5);
+        font-weight: bold;
+    }
+}
+
 .align-items {
     display: flex;
     width: 100%;
@@ -149,6 +161,7 @@ footer {
     animation-delay: 3s;
     animation: nimbus 5s infinite;
     animation-play-state: paused;
+    transition: all 1s;
 }
 
 @keyframes nimbus {
@@ -191,10 +204,39 @@ footer {
     }
     #golden-ball {
         display: none;
+        transition: none;
     }
+
+    .nimbus{
+        display: none;
+    }
+
     header {
         align-content: center;
     }
+    
+    .standard-section, .second-standard-section, .third-standard-section {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-height: 350px){
+    .coat-of-arms {
+        display: none;
+    }
+    #golden-ball {
+        display: none;
+        transition: none;
+    }
+
+    .nimbus{
+        display: none;
+    }
+
+    header {
+        align-content: center;
+    }
+    
     .standard-section, .second-standard-section, .third-standard-section {
         max-width: 100%;
     }

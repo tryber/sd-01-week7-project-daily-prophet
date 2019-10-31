@@ -1,4 +1,6 @@
-let selectNimbus = document.querySelector(".nimbus")
+const selectNimbus = document.querySelector(".nimbus")
+const paragraphToGrow = document.querySelectorAll(".grow-paragraph")
+
 
 function clickNimbus () {
     selectNimbus.addEventListener("click", function(){
@@ -12,5 +14,13 @@ function pausedNimbus () {
     })
 }
 
+function growParagraph () {
+    for(let i = 0; i < paragraphToGrow.length; i++) {
+        console.log(paragraphToGrow.length)
+        console.log(paragraphToGrow[i])
+    }
+}
+
 clickNimbus ()
 pausedNimbus ()
+growParagraph ()
