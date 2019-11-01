@@ -9,30 +9,51 @@ function putBroomStyle() {
     this.classList.remove("halt-animation");
 };
 
-function toggleArticleStyle() {
-    if ( this.classList.contains("article-animation") ) {
-        this.classList.remove("article-animation");
-        this.classList.add("halt-animation");
-    }
-    else {
-        this.classList.remove("halt-animation");
-        this.classList.add("article-animation");
-    }
-};
+function putBroomStyleSmall () {
+    this.style = "animation: broom 5s steps(10, end) forwards"
+    this.classList.remove("halt-animation")
+}
 
 function animate() {
-    if ( window.innerWidth >= 760 ) {
-            broom.addEventListener("click", putBroomStyle);
-            for (article of articles) {
-                article.addEventListener("click", putArticleStyle);
-        }
+    for (let article of articles) {
+        article.className = ""
     }
-    else if ( window.innerWidth < 760) {
-        broom.removeEventListener("click", putBroomStyle);
-        broom.className = "broom halt-animation";
+    if ( window.innerWidth >= 760 ) {
+        broom.addEventListener("click", putBroomStyle);
         for (article of articles) {
-            article.removeEventListener("click", putArticleStyle);
-            article.className = "halt-animation";
-        }
-    }    
-};
+            article.addEventListener("click", function(e, size = "big") {
+                switch (this.className) {
+                    case "" :
+                        this.className = `article-animation-${size}`
+                        break
+                    case `article-animation-${size}` :
+                        this.className = "halt-animation"
+                        break
+                    case "halt-animation" :
+                        this.className = `article-animation-${size}`
+                        break
+                    }
+            })
+        }    
+    }
+    else if (window.innerWidth < 760) {
+        broom.addEventListener("click", function() {
+            putBroomStyleSmall
+        });
+        for (article of articles) {
+        article.addEventListener("click", function(e, size = "small") {
+            switch (this.className) {
+                case "" :
+                    this.className = `article-animation-${size}`
+                    break
+                case `article-animation-${size}` :
+                    this.className = "halt-animation"
+                    break
+                case "halt-animation" :
+                    this.className = `article-animation-${size}`
+                    break
+                }
+            })
+        }    
+    }
+}

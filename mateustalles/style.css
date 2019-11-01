@@ -29,7 +29,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .halt-animation {
@@ -41,9 +41,37 @@ h1 {
 }
 
  .owl {
+    opacity: 0;
     max-width: 100px;
-    display: none;
+    animation: moviment 3s steps(60, end) 3s 3 alternate forwards ;
 } 
+
+@keyframes moviment {
+    0% {
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
+    20% {
+
+        transform: translate(240px, 30px);
+    }
+    40% {
+        transform: translate(0px, 140px);
+    }
+
+    60% {
+        transform: translate(500px, 0px)
+    }
+
+    80% {
+        transform: translate(320px, 30px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(450px, 190px)
+    }
+}
 
 p {
     margin-top:5px;
@@ -125,10 +153,7 @@ section article h2 {
 }
 
 @keyframes section-effect {
-    0% { 
-        transform: scale(1.0);
-    }
-    100% {
+   to {
         transform: scale(1.5);
         font-weight: bold;
      }
@@ -141,21 +166,58 @@ section article h2 {
     right: 30px;
     z-index: -1;
     opacity: 0.3;
+    animation: star-movement 6s steps(30, end) infinite;
 }
 
 @keyframes star-movement {
-    0% {
-        transform: rotate(0deg);
+    to {
+        transform: rotate(360deg)
     }
-    40% {
-        transform:rotate(270deg);
+}
+
+.article-animation-small {
+    animation: section-effect 4s steps(10, end) forwards;
+}
+
+@media screen and (max-width: 760px) and (orientation: landscape) {
+
+    body {
+        max-width: 85%;
     }
-    60% {
-        transform:rotate(-180deg);
+
+    @keyframes moviment {
+        0% {
+            opacity: 1;
+            transform: translate(0px,0px);
+        }
+        20% {
+    
+            transform: translate(240px, 30px);
+        }
+        40% {
+            transform: translate(0px, 140px);
+        }
+    
+        60% {
+            transform: translate(400px, 0px)
+        }
+    
+        80% {
+            transform: translate(320px, 30px)
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(400px, 190px)
+        }
     }
-    100% {
-        transform:rotate(0deg);
-    }
+
+    .owl {
+        opacity: 0;
+        max-width: 100px;
+        animation: moviment 3s steps(60, end) 3s 3 alternate forwards ;
+    } 
+  
 }
 
 @media screen and (min-width: 760px) {
@@ -195,37 +257,9 @@ section article h2 {
     }
 
     .star {
-    
         animation: star-movement 6s infinite ease-in;
     }
 
-    @keyframes moviment {
-        0% {
-            opacity: 1;
-            transform: translate(0px,0px);
-        }
-        20% {
-
-            transform: translate(240px, 30px);
-        }
-        40% {
-            transform: translate(0px, 140px);
-        }
-
-        60% {
-            transform: translate(1000px, 0px)
-        }
-
-        80% {
-            transform: translate(760px, 30px)
-        }
-
-        100% {
-            opacity: 1;
-            transform: translate(1000px, 140px)
-        }
-    }
-        
     .owl {
         display: block;
         opacity: 0;
@@ -240,7 +274,7 @@ section article h2 {
         animation-play-state: paused;
     }
 
-    .article-animation {
+    .article-animation-big {
         animation: section-effect 4s forwards ease-in;
     }
 }
