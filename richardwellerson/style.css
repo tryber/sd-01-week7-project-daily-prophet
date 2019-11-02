@@ -21,7 +21,6 @@ a {
 
 header {
     align-items: center;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     padding: 5%;
@@ -49,7 +48,6 @@ header {
 }
 
 .header-image {
-    box-sizing: border-box;
     max-width: 100%;
     position: relative;
     word-break: normal;
