@@ -81,7 +81,6 @@ article {
 }
 
 .grow-paragraph {
-    word-break: normal;
     font-weight: 400;
     animation: grow 4s steps(200) backwards;
     animation-play-state: paused;
