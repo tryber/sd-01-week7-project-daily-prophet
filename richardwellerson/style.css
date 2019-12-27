@@ -87,13 +87,16 @@ article {
 }
 
 .grow-paragraph {
-    animation: grow 4s ease;
+    animation: grow 4s linear;
     animation-play-state: paused;
 }
 
 @keyframes grow {
+    from {
+        transform: scale(1.0);
+    }
+
     to {
-        font-weight: bold;
         transform: scale(1.5);
     }
 }
