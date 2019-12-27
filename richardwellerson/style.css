@@ -221,12 +221,14 @@ footer {
         align-content: center;
     }
     
-    .standard-section, .second-standard-section, .third-standard-section {
+    .standard-section {
         max-width: 100%;
     }
 }
 
-@media screen and (max-height: 350px){
+@media screen and (min-device-width: 480px) 
+              and (max-device-width: 640px) 
+              and (orientation: landscape) {
 
     .coat-of-arms {
         display: none;
@@ -245,7 +247,7 @@ footer {
         align-content: center;
     }
     
-    .standard-section, .second-standard-section, .third-standard-section {
+    .standard-section {
         max-width: 100%;
     }
 }
