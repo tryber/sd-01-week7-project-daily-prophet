@@ -1,0 +1,247 @@
+body {
+    background: #dddddd;
+    color: black;
+    cursor: url("images/cursor.png"), auto;
+    font-family: "Exo 2", sans-serif;
+    margin: 0 auto;
+    text-align: justify;
+    word-break: normal;
+}
+
+nav {
+    background-color: black;
+    border: 2px solid whitesmoke;
+    color: #dddddd;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+a {
+    max-width: 100%;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    word-break: normal;
+}
+
+.star {
+    animation: star-rotate 0.5s steps(100) infinite;
+    position: absolute;
+    width: 5%;
+}
+
+@keyframes star-rotate {
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+.coat-of-arms {
+    animation: 3s steps(100) infinite;
+    animation-name: shake-coat-of-arms;
+    width: 10%;
+    word-break: normal;
+}
+
+.header-image {
+    max-width: 100%;
+    position: relative;
+    word-break: normal;
+}
+
+.iframe-container {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+}
+
+.iframe-container iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.standard-section {
+    height: auto;
+    max-width: 100%;
+}
+
+article {
+    padding: 5%;
+}
+
+.grow-paragraph {
+    animation: grow 4s steps(100) backwards;
+    animation-play-state: paused;
+    font-weight: 400;
+}
+
+@keyframes grow {
+
+    to {
+        font-weight: 900;
+        transform: scale(1.5);
+    }
+}
+
+.align-items {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100%;
+    width: 100%;
+}
+
+footer {
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+.golden-ball {
+    animation: golden-ball 5s steps(100) 3 alternate;
+    animation-delay: 3s;
+    height: 20%;
+    margin-left: 0;
+    position: absolute;
+    transition: 1s;
+    width: 10%;
+}
+
+.golden-ball:hover {
+    animation-play-state: paused;
+}
+
+@keyframes golden-ball {
+    0% {
+        margin-left: 0;
+    }
+    
+    35% {
+        margin-left: 30%;
+        transform: skew(-30deg) translate(0, -30%);
+    }
+
+    70% {
+        transform: skew(100deg);
+        transform: translate(-20%, 109%);
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+.nimbus {
+    animation: nimbus 5s steps(200) infinite;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    height: 10%;
+    transition: all 1s;
+    width: 10%;
+}
+
+@keyframes nimbus {
+
+    25% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+        transform: scale(2.0);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translate(0, -150%) scale(2.0);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: skew(100deg) translate(-800%, -800%) scale(2.0);
+    }
+}
+
+@keyframes shake-coat-of-arms {
+    
+    20% {
+        transform: rotate(55deg);
+        transform: translate(0, -100%) skew(20deg, 25deg);
+    }
+
+    50% {
+        transform: rotate(33deg);
+    }
+
+    80% {
+        transform: rotate(-17deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .coat-of-arms {
+        display: none;
+    }
+
+    .golden-ball {
+        display: none;
+        transition: none;
+    }
+
+    .nimbus {
+        display: none;
+    }
+
+    header {
+        align-content: center;
+    }
+    
+    .standard-section {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-device-width: 480px) 
+              and (max-device-width: 640px) 
+              and (orientation: landscape) {
+
+    .coat-of-arms {
+        display: none;
+    }
+
+    .golden-ball {
+        display: none;
+        transition: none;
+    }
+
+    .nimbus {
+        display: none;
+    }
+
+    header {
+        align-content: center;
+    }
+    
+    .standard-section {
+        max-width: 100%;
+    }
+}
