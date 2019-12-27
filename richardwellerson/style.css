@@ -72,16 +72,6 @@ header {
     max-width: 100%;
 }
 
-.second-standard-section {
-    height: auto;
-    max-width: 50%;
-}
-
-.third-standard-section {
-    height: auto;
-    max-width: 63%;
-}
-
 article {
     padding: 5%;
 }
