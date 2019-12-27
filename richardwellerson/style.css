@@ -173,12 +173,12 @@ footer {
 
     75% {
         opacity: 1;
-        transform: translate(0, -150%);
+        transform: translate(0, -150%) scale(2.0);
     }
     
     100% {
         opacity: 0;
-        transform: skew(100deg) translate(-800%, -800%);
+        transform: skew(100deg) translate(-800%, -800%) scale(2.0);
     }
 }
 
