@@ -32,7 +32,7 @@ header {
 }
 
 .star {
-    animation: star-rotate 0.5s infinite;
+    animation: star-rotate 0.5s steps(100) infinite;
     position: absolute;
     width: 5%;
 }
@@ -44,7 +44,7 @@ header {
 }
 
 .coat-of-arms {
-    animation: 3s infinite;
+    animation: 3s steps(100) infinite;
     animation-name: shake-coat-of-arms;
     width: 10%;
     word-break: normal;
@@ -82,7 +82,7 @@ article {
 
 .grow-paragraph {
     font-weight: 400;
-    animation: grow 4s steps(200) backwards;
+    animation: grow 4s steps(100) backwards;
     animation-play-state: paused;
 }
 
@@ -113,7 +113,7 @@ footer {
 }
 
 .golden-ball {
-    animation: golden-ball 5s 3 alternate;
+    animation: golden-ball 5s steps(100) 3 alternate;
     animation-delay: 3s;
     height: 20%;
     margin-left: 0;
@@ -147,7 +147,7 @@ footer {
 }
 
 .nimbus {
-    animation: nimbus 5s infinite;
+    animation: nimbus 5s steps(200) infinite;
     animation-delay: 1s;
     animation-fill-mode: forwards;
     animation-play-state: paused;
