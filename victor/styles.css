@@ -1,0 +1,218 @@
+.harry-potter-animation {
+    animation: hpanimation 15s steps(50) 3 alternate;
+    animation-delay: 3s;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    margin-top: 5%;
+    position: absolute;
+    transition: 1s;
+    width: 200px;
+}
+
+.harry-potter-animation:hover {
+    animation-play-state: paused;
+}
+
+@keyframes hpanimation {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        transform: rotate(180deg);
+        transform: translate(100px, 100px) rotate(30deg);
+    }
+    
+    40% {
+        transform: rotate(180deg);
+        transform: translate(1000px, 150px) rotate(36deg);
+    }
+    
+    60% {
+        transform: skew(100deg);
+        transform: translate(-20%, 109%);
+    }
+
+    90% {
+        transform: translate(50%, 50%) rotate(360deg);
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+.magic-broom {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 20px;
+}
+
+.magic-bloom-flying {
+    animation: magicBloom 5s steps(100) infinite;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: all 1s;
+    width: 200px;
+}
+
+@keyframes magicBloom {
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    45% {
+        transform: rotate(-20deg);
+        transform: scale(2.0);
+    }
+
+    75% {
+        transform: translate(0, -80%) scale(2.0);
+    }
+    
+    100% {
+        transform: skew(100deg) translate(-1000%, -1000%) scale(2.0);
+    }
+}
+
+.paragraph-animation {
+    animation: paragraph-animation 4s steps(100) backwards;
+    animation-play-state: paused;
+    font-weight: 400;
+}
+
+@keyframes paragraph-animation {
+    
+    to {
+        font-weight: 700;
+        transform: scale(1.5);
+    }
+}
+
+body {
+    background-image: url(img/bg-image.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navigation {
+    margin: 20px 0 20px 0;
+}
+
+.navigation-li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 100px 0 100px;
+    text-decoration: none;
+}
+
+.main-title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.main-info img {
+    width: 90px;
+}
+
+.main-info {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.main-subtitle {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 50px 0 50px;
+}
+
+.first-article img {
+    margin: 20px;
+    width: 200px;
+}
+
+.first-article {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+}
+
+.first-article-title {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    margin: 0 150px 0 150px;
+    text-align: center;
+}
+
+.article-in-column {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 30px;
+}
+
+.second-article-title, .third-article-title {
+    padding: 5px;
+}
+
+.ad-promotion {
+    text-align: center;
+}
+
+aside a {
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.fourth-article {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    margin: 30px 30px 0 30px;
+}
+
+.fourth-article img {
+    margin-right: 50px;
+    width: 250px;
+}
+    
+.fourth-article-title {
+    background-color: black;
+    color: white;
+    margin: 0 50px 0 50px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    padding: 50px;
+    text-align: center;
+}
+
+.star {
+    animation: star-animation 1s steps(50) infinite;
+    opacity: 1;
+    position: absolute;
+    width: 8%;
+}
+
+@keyframes star-animation {
+    from {
+        transform: rotate(360deg);
+    }
+}
