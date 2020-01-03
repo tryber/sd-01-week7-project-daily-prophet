@@ -4,14 +4,14 @@
 }
 
 #harry-potter-animation {
-    animation: hpanimation 10s infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in;
+    animation: hpanimation 15s steps(50) 3 alternate;
     position: absolute;
+    animation-timing-function: ease-in;
     animation-delay: 3s;
-    width: 300px;
-    transition-duration: 4s;
+    width: 200px;
+    transition: 1s;
     animation-play-state: running;
+    margin-top: 5%;
 }
 
 #harry-potter-animation:hover {
@@ -19,32 +19,81 @@
 }
 
 @keyframes hpanimation {
+    0% {
+        margin-left: 0;
+    }
+
     20% {
         transform: rotate(180deg);
         transform: translate(100px, 100px) rotate(30deg);
-        transition-duration: 4s;
     }
     
     40% {
         transform: rotate(180deg);
         transform: translate(1000px, 150px) rotate(36deg);
-        transition-duration: 4s;
     }
     
     60% {
-        transform: rotate(180deg);
-        transform: translate(300px, 900px) rotate(180deg);
-        transition-duration: 4s;
+        transform: skew(100deg);
+        transform: translate(-20%, 109%);
     }
 
-    80% {
-        transform: translate(200px, 600px) rotate(40deg);
-        transition-duration: 4s;
+    90% {
+        transform: translate(50%, 50%) rotate(360deg);
     }
 
     100% {
-        transform: translate(50%, 50%) rotate(360deg);
-        transition-duration: 4s;
+        margin-left: 0;
+    }
+}
+
+#magic-broom {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 20px;
+}
+
+#magic-bloom-flying {
+    animation: magicBloom 5s steps(100) infinite;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: all 1s;
+    width: 200px;
+}
+
+@keyframes magicBloom {
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    45% {
+        transform: rotate(-20deg);
+        transform: scale(2.0);
+    }
+
+    75% {
+        transform: translate(0, -80%) scale(2.0);
+    }
+    
+    100% {
+        transform: skew(100deg) translate(-1000%, -1000%) scale(2.0);
+    }
+}
+
+.paragraph-animation {
+    animation: paragraph-animation 4s steps(100) backwards;
+    animation-play-state: paused;
+    font-weight: 400;
+}
+
+@keyframes paragraph-animation {
+    
+    to {
+        font-weight: 50%;
+        transform: scale(1.5);
     }
 }
 
@@ -75,7 +124,7 @@ body {
     text-align: center;
 }
 
-#main-info img{
+#main-info img {
     width: 90px;
 }
 
@@ -126,30 +175,6 @@ body {
 #ad-promotion {
     text-align: center;
 }
-#magic-broom {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    margin: 20px;
-}
-
-#magic-broom img {
-    width: 380px;
-}
-
-#magic-bloom-flying {
-    animation: magicBloom 5s infinite;
-    animation-direction: alternate;
-    transform: rotate(5deg);
-    transition-duration: 3s;
-}
-
-#magic-bloom-flying:active {
-    transition-duration: 3s;
-    width: 500px;
-    transform: translateX(10px) scale(2.0, 2.0);
-    transform: rotate(360deg);
-}
 
 aside a {
     text-decoration: none;
@@ -182,4 +207,17 @@ footer {
     color: white;
     margin-top: 30px;
     text-align: center;
+}
+
+.star {
+    animation: star-animation 1s steps(50) infinite;
+    position: absolute;
+    width: 8%;
+    opacity: 50%;
+}
+
+@keyframes star-animation {
+    from {
+        transform: rotate(360deg);
+    }
 }
