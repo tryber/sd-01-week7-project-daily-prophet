@@ -3,18 +3,18 @@
     padding: 0;
 }
 
-#harry-potter-animation {
+.harry-potter-animation {
     animation: hpanimation 15s steps(50) 3 alternate;
-    position: absolute;
-    animation-timing-function: ease-in;
     animation-delay: 3s;
-    width: 200px;
-    transition: 1s;
     animation-play-state: running;
+    animation-timing-function: ease-in;
     margin-top: 5%;
+    position: absolute;
+    transition: 1s;
+    width: 200px;
 }
 
-#harry-potter-animation:hover {
+.harry-potter-animation:hover {
     animation-play-state: paused;
 }
 
@@ -47,14 +47,14 @@
     }
 }
 
-#magic-broom {
+.magic-broom {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     margin: 20px;
 }
 
-#magic-bloom-flying {
+.magic-bloom-flying {
     animation: magicBloom 5s steps(100) infinite;
     animation-delay: 1s;
     animation-fill-mode: forwards;
@@ -105,11 +105,11 @@ body {
     background-size: cover;
 }
 
-#navigation {
+.navigation {
     margin: 20px 0 20px 0;
 }
 
-#navigation-li {
+.navigation-li {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -118,17 +118,17 @@ body {
     list-style-type: none;
 }
 
-#main-title {
+.main-title {
     font-size: 50px;
     font-family: 'Kaushan Script', cursive;
     text-align: center;
 }
 
-#main-info img {
+.main-info img {
     width: 90px;
 }
 
-#main-info {
+.main-info {
     align-items: center;
     display: flex;
     flex-direction: row-reverse;
@@ -136,25 +136,25 @@ body {
     margin-top: 20px;
 }
 
-#main-subtitle {
+.main-subtitle {
     display: flex;
     justify-content: space-between;
-    margin: 10px 50px 0px 50px;
+    margin: 10px 50px 0 50px;
 }
 
-#first-article img {
+.first-article img {
     margin: 20px;
     width: 200px;
 }
 
-#first-article {
+.first-article {
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
     padding: 10px;
 }
 
-#first-article-title {
+.first-article-title {
     text-align: center;
     font-size: 40px;
     color: white;
@@ -162,17 +162,17 @@ body {
     margin: 0 150px 0 150px;
 }
 
-#article-in-column {
+.article-in-column {
     display: flex;
     flex-flow: row nowrap;
     margin: 30px;
 }
 
-#second-article-title, #third-article-title {
+.second-article-title, .third-article-title {
     padding: 5px;
 }
 
-#ad-promotion {
+.ad-promotion {
     text-align: center;
 }
 
@@ -182,19 +182,19 @@ aside a {
     color: blue;
 }
 
-#fourth-article {
+.fourth-article {
     display: flex;
     flex-flow: row-reverse nowrap;
     align-items: flex-start;
     margin: 30px 30px 0 30px;
 }
 
-#fourth-article img {
+.fourth-article img {
     width: 250px;
     margin-right: 50px;
 }
-
-#fourth-article-title {
+    
+.fourth-article-title {
     text-align: center;
     color: white;
     background-color: black;

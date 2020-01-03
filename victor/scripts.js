@@ -1,5 +1,5 @@
 function clickAnimationBloom() {   
-    const bloomAnimation = document.querySelector("#magic-bloom-flying");
+    const bloomAnimation = document.querySelector(".magic-bloom-flying");
     bloomAnimation.addEventListener("click", () => bloomAnimation.style.animationPlayState = "running");
     bloomAnimation.addEventListener("dblclick", () => bloomAnimation.style.animationPlayState = "paused");
 }
