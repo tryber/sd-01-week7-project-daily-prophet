@@ -87,7 +87,7 @@
 @keyframes paragraph-animation {
     
     to {
-        font-weight: 700px;
+        font-weight: 700;
         transform: scale(1.5);
     }
 }
@@ -206,8 +206,8 @@ footer {
 
 .star {
     animation: star-animation 1s steps(50) infinite;
+    opacity: 1;
     position: absolute;
-    opacity: 50;
     width: 8%;
 }
 
