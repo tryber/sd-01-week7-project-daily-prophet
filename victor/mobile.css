@@ -2,13 +2,13 @@
     margin: 5px;
 }
 
-#main-title {
-    text-align: justify;
-    font-size: 50px;
+.main-title {
     font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    text-align: justify;
 }
 
-#navigation {
+.navigation {
     display: none;
 }
 
@@ -16,21 +16,21 @@ img {
     display: none;
 }
 
-#first-article-title {
+.first-article-title {
     font-size: 200%;
     margin: auto;
 }
 
-#article-in-column {
+.article-in-column {
     display: flex;
     flex-flow: column wrap;
     margin: 30px;
 }
 
-#footer, #footer p {
-    margin: 0px;
+.footer, .footer p {
+    margin: 0;
 }
 
-#fourth-article-title {
+.fourth-article-title {
     margin: auto;
 }

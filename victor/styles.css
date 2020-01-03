@@ -48,9 +48,9 @@
 }
 
 .magic-broom {
+    align-items: center;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
     margin: 20px;
 }
 
@@ -111,16 +111,16 @@ body {
 
 .navigation-li {
     display: flex;
+    list-style-type: none;
     flex-flow: row nowrap;
     justify-content: space-around;
-    text-decoration: none;
     margin: 0 100px 0 100px;
-    list-style-type: none;
+    text-decoration: none;
 }
 
 .main-title {
-    font-size: 50px;
     font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -155,11 +155,11 @@ body {
 }
 
 .first-article-title {
-    text-align: center;
-    font-size: 40px;
-    color: white;
     background-color: black;
+    color: white;
+    font-size: 40px;
     margin: 0 150px 0 150px;
+    text-align: center;
 }
 
 .article-in-column {
@@ -177,43 +177,43 @@ body {
 }
 
 aside a {
-    text-decoration: none;
-    cursor: pointer;
     color: blue;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .fourth-article {
+    align-items: flex-start;
     display: flex;
     flex-flow: row-reverse nowrap;
-    align-items: flex-start;
     margin: 30px 30px 0 30px;
 }
 
 .fourth-article img {
-    width: 250px;
     margin-right: 50px;
+    width: 250px;
 }
     
 .fourth-article-title {
-    text-align: center;
-    color: white;
     background-color: black;
+    color: white;
     margin: 0 50px 0 50px;
+    text-align: center;
 }
 
 footer {
-    padding: 50px;
     background-color: black;
     color: white;
     margin-top: 30px;
+    padding: 50px;
     text-align: center;
 }
 
 .star {
     animation: star-animation 1s steps(50) infinite;
+    opacity: 50%;
     position: absolute;
     width: 8%;
-    opacity: 50%;
 }
 
 @keyframes star-animation {
